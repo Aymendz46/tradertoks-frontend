@@ -8,9 +8,11 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-    <title>Bruh UI pls give oxygen i can't breathe</title>
+    <title>Trader Toks | Welcome!</title>
 
     <style>
 
@@ -22,21 +24,77 @@
 
       body
       {
-        font-family: "Aldrich", sans-serif;
-        background-color: #F2F6FF;
+        font-family: "Poppins", sans-serif;
+        background-color: #FBFBFB;
       }
 
-      .header-text h2
+      /* navigation background style */
+      nav
       {
-        font-family: Aldrich;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+        background: rgba(80, 75, 75, 0.9);
+        backdrop-filter: blur(21px);
+      }
+
+      /* global style for lists*/
+
+      li 
+      {
+        list-style: none;
+        margin: 1em;
+      }
+
+      /* global styles for links inside lists */
+
+      li a
+      {
+        text-decoration:  none;
+      }
+
+      /* links inside lists of the class .links style */
+
+      .links li a
+      {
+        font-family: Bebas Neue;
         font-style: normal;
         font-weight: normal;
-        font-size: 25px;
-        line-height: 24px;
-        margin-top: 30px;
-        text-align: center;
-        color: #354168;
+        font-size: 24px;
+        line-height: 29px;
+        color: #F2ECED;
+      }  
+
+      /* elements inside links class, style */
+
+      .links
+      {
+        display: flex;
+        justify-content: center;
+        z-index: 1000;
+        letter-spacing: 0em;
+        transition: top 1s ease-in-out;
       }
+
+      li .active
+      {
+        font-weight: bold;
+      }
+
+      .icon.close
+      {
+        /*display: none;*/
+        z-index: 1111;
+        transition: all 1s ease-in-out;
+      }
+
+      .material-icons
+      {
+        font-size: 38px;
+      }
+
+      /* Card UI CSS (khati) */
 
       .card
       {
@@ -70,7 +128,7 @@
         background-color: #BBCFDC;
         border-radius: 0px 0px 15px 15px;
         border: none;
-        font-family: Aldrich;
+        font-family: Poppins;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
@@ -128,10 +186,41 @@
 
 
 
+
     </style>
   </head>
   <body>
-    <div class="wrapper">
+    <header>
+      <nav>
+        <a href="index.html"><img src="./imgs/Logo.svg" class="logo-link"></a>
+        <!--div class="overlay"></div-->
+        <ul class="links">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Crypto News</a></li>
+          <li><a href="#">Recent Analytics</a></li>
+          <li><a href="#">Contact Me</a></li>
+        </ul>
+        <ul class="links">
+          <li><a href="javascript:void(0);" class="icon close" onclick="hideMenu()"> 
+         <span class="material-icons close">
+            close      
+         </span></a>
+        </li>
+        
+        </ul>
+
+        <a href="javascript:void(0);" class="icon open" onclick="displayMenu()">
+         <span class="material-icons">
+            menu      
+         </span>
+        </a>
+        </a>
+      </nav>
+    </header>
+    <!--div class="wrapper">
       <div class="nigga">
         <div class="header-text">
         <h2>
@@ -157,6 +246,41 @@
         <button class="btn" href="#">Cancel</button>
       </div>
       
-    </div>
+    </div-->
+
+    <script type="text/javascript">
+
+        function displayMenu() {
+          var links = document.getElementsByClassName("links")[0];
+          var closeBtn = document.getElementsByClassName("close")[0];
+          var open = document.getElementsByClassName("open")[0];
+          
+          if (links)
+          {
+            closeBtn.style.display = "block";
+            //links.style.transform = "translateY(0%)";
+            links.style.top = "0";
+            //links.classList.toggle("active");
+            open.style.display = "none";
+          }
+        }
+
+        function hideMenu()
+        {
+          var links = document.getElementsByClassName("links")[0];
+          var closeBtn = document.getElementsByClassName("icon close")[0];
+          var open = document.getElementsByClassName("icon open")[0];
+
+          if (links)
+          {
+            open.style.display = "block";
+            //links.style.transform = "translateY(-100%)";  
+            links.style.top = "-100%";
+            
+            //links.classList.toggle("active");
+            closeBtn.style.display = "none";
+          }
+        }
+      </script>
   </body>
 </html>
