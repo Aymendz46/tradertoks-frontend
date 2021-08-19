@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #FBFBFB;
+}
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.section-title h1 {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 42px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #504B4B;
+    border-top: 3px solid #504B4B;
+    border-bottom: 3px solid #504B4B;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+
+/*--------------------
+        Left dots
+--------------------*/
+
+.left-dots {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 30%;
+    left: 3%;
+    z-index: 2;
+}
+
+.dots {
+    display: inline-block;
+    height: 15px;
+    background: rgba(80, 75, 75, 0.45);
+    width: 15px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.dots.active {
+    background: #504B4B;
+}
+
+
+/*-----------------------
+        NavBar
+-------------------------*/
+
+
+/* navigation background style */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    transition: top ease-in-out 1s;
+}
+
+
+/* global style for lists*/
+
+li {
+    list-style: none;
+    margin: 1em;
+}
+
+
+/* global styles for links inside lists */
+
+li a {
+    text-decoration: none;
+}
+
+
+/* links inside lists of the class .links style */
+
+.links li a {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F2ECED;
+}
+
+
+/* elements inside links class, style */
+
+.links {
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    letter-spacing: 0em;
+}
+
+li .active {
+    font-weight: bold;
+}
+
+.icon.close {
+    display: none;
+    z-index: 1111;
+    transition: all 1s ease-in-out;
+}
+
+.icon.open .material-icons {
+    color: #303030;
+}
+
+.material-icons {
+    font-size: 38px;
+    color: #f2eced;
+}
+
+header {
+    background: #fbfbfb;
+    backdrop-filter: blur(21px);
+    padding: 1em 2.5em 1em 2.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #fbfbfb 50%, rgba(80, 75, 75, 0.9) 50%) left;
+    background-size: 200%;
+    transition: 0.9s ease-out;
+}
+
+header.active {
+    background-position: right;
+}
+
+nav.inactive {
+    transform: translate(0px, -100px);
+    /*visibility: hidden*/
+    ;
+}
+
+
+/*--------------------
+        Main
+--------------------*/
+
+.main h3 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 123%;
+    letter-spacing: 0.135em;
+    color: #504B4B;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.right {
+    position: relative;
+}
+
+.image-bottom {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80%;
+    z-index: -1;
+}
+
+.image-top {
+    padding-top: 30px;
+    padding-left: 30%;
+    width: 80%;
+}
+
+img {
+    display: block;
+}
+
+
+/*--------------------
+        Who
+--------------------*/
+
+.who {
+    margin: 0 10%;
+}
+
+.who p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #797878;
+}

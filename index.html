@@ -1,276 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,maximum-scale=5" />
 
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=5" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="style.css">
     <title>Trader Toks | Welcome!</title>
+</head>
 
-    <style>
-
-      * 
-      { 
-        box-sizing: border-box;
-        margin: 0;
-      }
-
-      body
-      {
-        font-family: "Poppins", sans-serif;
-        background-color: #FBFBFB;
-      }
-
-      /* navigation background style */
-      nav
-      {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1em;
-        transition: top ease-in-out 1s;
-      }
-
-      /* global style for lists*/
-
-      li 
-      {
-        list-style: none;
-        margin: 1em;
-      }
-
-      /* global styles for links inside lists */
-
-      li a
-      {
-        text-decoration:  none;
-      }
-
-      /* links inside lists of the class .links style */
-
-      .links li a
-      {
-        font-family: Bebas Neue;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 29px;
-        color: #F2ECED;
-      }  
-
-      /* elements inside links class, style */
-
-      .links
-      {
-        display: flex;
-        justify-content: center;
-        z-index: 1000;
-        letter-spacing: 0em;
-        
-      }
-
-      li .active
-      {
-        font-weight: bold;
-      }
-
-      .icon.close
-      {
-        display: none;
-        z-index: 1111;
-        transition: all 1s ease-in-out;
-      }
-
-      .icon.open .material-icons
-      {
-        color: #303030;
-      }
-
-      .material-icons
-      {
-        font-size: 38px;
-        color: #f2eced;
-      }
-
-      /* Card UI CSS (khati) */
-
-      .card
-      {
-        display: flex;
-        margin-top: 0.8em;
-        flex-direction: column;
-      }
-
-      .wrapper
-      {
-        display: flex;
-        align-items: center;
-        margin-top: 2em;
-        flex-direction: column;
-        width: auto; 
-      }
-
-      .wrapper .nigga
-      {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 15px;
-        background-color: #D2E1FB;
-        width: 344px;
-      }
-
-      .wrapper .btn
-      {
-        background-color: #BBCFDC;
-        border-radius: 0px 0px 15px 15px;
-        border: none;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 14px;
-        color: #313A57;
-        margin-top: 30px;
-        height: 3em;
-        width: 100%;
-      }
-
-      .p-name
-      {
-        font-family: Aldrich;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 15px;
-        line-height: 15px;
-        text-decoration-line: underline;
-        color: #343A4F;
-      }
-
-      .l-name
-      {
-        font-family: Aldrich;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 15px;
-        color: #65859A;
-      }
-
-      @media screen and (min-width: 768px)
-      {
-        .card
-        {
-          margin: 0.9em 6em 0em 6em;
-        }
-
-        .p-name
-        {
-          font-size: 18px;
-          line-height: 27px;    
-        }
-
-        .header-paragraph h6
-        {
-          margin-top: 0px;
-        }
-
-        .wrapper .nigga
-        {
-          width: auto;
-        }
-      }
-
-      header
-      {
-        background: #fbfbfb;
-        backdrop-filter: blur(21px);
-        padding: 1em 2.5em 1em 2.5em;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: linear-gradient(to right, #fbfbfb 50%, rgba(80, 75, 75, 0.9) 50%) left;
-        background-size: 200%;
-        transition: 0.9s ease-out;
-      }
-
-      header.active
-      {
-        background-position: right;
-      }
-
-      nav.inactive
-      {
-        transform: translate(0px, -100px);
-        /*visibility: hidden*/;
-      }
-
-    </style>
-  </head>
-  <body>
+<body>
+    <div class="left-dots">
+        <div class="dots active"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+    </div>
     <header>
-      <a href="index.html"><img src="./imgs/Logo.svg" class="logo-link"></a>
-      <nav class="inactive">
-        
-        <!--div class="overlay"></div-->
-        <ul class="links">
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">Videos</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Courses</a></li>
-          <li><a href="#">Crypto News</a></li>
-          <li><a href="#">Recent Analytics</a></li>
-          <li><a href="#">Contact Me</a></li>
-        </ul>
-      </nav>
-      <a href="javascript:void(0);" class="icon open" onclick="displayMenu()">
-         <span class="material-icons">
+        <a href="index.html"><img src="./imgs/Logo.svg" class="logo-link"></a>
+        <nav class="inactive">
+            <!--div class="overlay"></div-->
+            <ul class="links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Crypto News</a></li>
+                <li><a href="#">Recent Analytics</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+        </nav>
+        <a href="javascript:void(0);" class="icon open" onclick="displayMenu()">
+            <span class="material-icons">
             menu      
          </span>
         </a>
-        <a href="javascript:void(0);" class="icon close" onclick="hideMenu()"> 
-         <span class="material-icons close">
+        <a href="javascript:void(0);" class="icon close" onclick="hideMenu()">
+            <span class="material-icons close">
             close      
          </span>
-
         </a>
     </header>
-
-    <!--div class="wrapper">
-      <div class="nigga">
-        <div class="header-text">
-        <h2>
-          Name  
-        </h2>
-      </div>
-        <div class="card">
-          <div class="text-element">
-            <p class="l-name" href="#">Location - rue - wilaya</p>
-          </div>
-        </div> 
-        <div class="card">
-          <div class="text-element">
-            <a class="p-name" href="#">0123456789 - 0123456789</a>
-          </div>
-        </div>      
-        <div class="card">
-          <div class="text-element">
-            <a class="p-name" href="#">0123456789 - 0123456789</a>
-          </div>
-          
+    <!-- MAIN -->
+    <div class="main">
+        <div class="left">
+            <h3>The popular</h3>
+            <img src="imgs/title.svg" alt="Trader Course">
         </div>
-        <button class="btn" href="#">Cancel</button>
-      </div>
-      
-    </div-->
+        <div class="right">
+            <div class="image-bottom">
+                <img src="imgs/toks2.png" alt="Trader Toks">
+            </div>
+            <div class="image-top">
+                <img src="imgs/toks1.png" alt="Trader Toks">
+            </div>
+        </div>
+    </div>
+    <!-- WHO is this course for -->
+    <div class="who">
+        <div class="section-title">
+            <h1>
+                WHO IS THIS COURSE FOR?
+            </h1>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam magnam a pariatur necessitatibus dicta culpa ea quia dolores similique unde iusto tenetur explicabo, animi, provident consectetur sunt quam dolore? Cupiditate! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Quibusdam magnam a pariatur necessitatibus dicta culpa ea quia dolores similique unde iusto tenetur explicabo, animi, provident consectetur sunt quam dolore? Cupiditate!
+        </p>
+    </div>
+
+    <!-- WHAT DO YOU GET -->
+    <div class="what">
+        <div class="section-title">
+            <h1>
+                WHAT DO YOU GET?
+            </h1>
+        </div>
+    </div>
 
     <script type="text/javascript">
         const links = document.getElementsByClassName("links")[0];
@@ -278,39 +86,37 @@
         const n = document.getElementsByTagName("nav")[0];
 
         function displayMenu() {
-          const closeBtn = document.getElementsByClassName("close")[0];
-          const open = document.getElementsByClassName("open")[0];
+            const closeBtn = document.getElementsByClassName("close")[0];
+            const open = document.getElementsByClassName("open")[0];
 
-          if (links)
-          {
-            closeBtn.style.display = "block";
-            h.classList.add("active");
-            n.classList.remove("inactive");
-            //links.style.transform = "translateY(0%)";
-            links.style.top = "0";
-            //links.classList.toggle("active");
-            open.style.display = "none";
-          }
+            if (links) {
+                closeBtn.style.display = "block";
+                h.classList.add("active");
+                n.classList.remove("inactive");
+                //links.style.transform = "translateY(0%)";
+                links.style.top = "0";
+                //links.classList.toggle("active");
+                open.style.display = "none";
+            }
         }
 
-        function hideMenu()
-        {
-          //const links = document.getElementsByClassName("links")[0];
-          const closeBtn = document.getElementsByClassName("icon close")[0];
-          const open = document.getElementsByClassName("icon open")[0];
+        function hideMenu() {
+            //const links = document.getElementsByClassName("links")[0];
+            const closeBtn = document.getElementsByClassName("icon close")[0];
+            const open = document.getElementsByClassName("icon open")[0];
 
-          if (links)
-          {
-            open.style.display = "block";
-            //links.style.transform = "translateY(-100%)";  
-            links.style.top = "-100%";
-            h.classList.remove("active");
-            n.classList.add("inactive");
-            
-            //links.classList.toggle("active");
-            closeBtn.style.display = "none";
-          }
+            if (links) {
+                open.style.display = "block";
+                //links.style.transform = "translateY(-100%)";  
+                links.style.top = "-100%";
+                h.classList.remove("active");
+                n.classList.add("inactive");
+
+                //links.classList.toggle("active");
+                closeBtn.style.display = "none";
+            }
         }
-      </script>
-  </body>
+    </script>
+</body>
+
 </html>
