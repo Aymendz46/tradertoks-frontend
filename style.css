@@ -15,8 +15,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
 }
 
 .section-title h1 {
@@ -31,6 +31,17 @@ body {
     border-bottom: 3px solid #504B4B;
     text-align: center;
     padding: 1rem 1rem;
+}
+
+.section-title.light {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.section-title.light h1 {
+    color: #FBFBFB;
+    border-top: 3px solid #FBFBFB;
+    border-bottom: 3px solid #FBFBFB;
 }
 
 
@@ -210,4 +221,133 @@ img {
     font-size: 14px;
     line-height: 21px;
     color: #797878;
+}
+
+
+/*--------------------
+        What
+--------------------*/
+
+.what .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.what .content img {
+    width: 100%;
+}
+
+.what .content .detail {
+    padding: 3rem 5rem;
+}
+
+.what .content .detail h3 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.what .content .detail p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.what .content .detail .line {
+    display: block;
+    width: 80px;
+    height: 2px;
+    margin: 2rem;
+}
+
+.what .content .detail.dark {
+    background-color: #504B4B;
+    color: #D3D3D3;
+}
+
+.what .content .detail.dark .line {
+    background-color: #fbfbfb;
+}
+
+.what .content .detail.light {
+    background-color: #FBFBFB;
+}
+
+.what .content .detail.light .line {
+    background-color: #504B4B;
+}
+
+
+/*--------------------
+        Review
+--------------------*/
+
+.review .band {
+    background: #504B4B;
+}
+
+
+/*--------------------
+        What
+--------------------*/
+
+.connected {
+    display: flex;
+    flex-direction: column;
+    background: #504B4B;
+    text-align: center;
+}
+
+.connected h1 {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 77px;
+    color: #FBFBFB;
+}
+
+.connected .line {
+    display: block;
+    width: 80px;
+    height: 2px;
+    margin: auto;
+    background-color: #FBFBFB;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.connected .social {
+    position: relative;
+    margin: auto;
+    padding: 10rem;
+}
+
+.connected .circle {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    transform: translate(43%, 0);
+}
+
+.connected .circle img {
+    position: absolute;
+}
+
+.connected .circle img:nth-of-type(1) {
+    transform: translateY(-100px);
+}
+
+.connected .circle img:nth-of-type(2) {
+    transform: translateX(+100px);
+}
+
+.connected .circle img:nth-of-type(3) {
+    transform: translateY(100px);
+}
+
+.connected .circle img:nth-of-type(4) {
+    transform: translateX(-100px);
 }
