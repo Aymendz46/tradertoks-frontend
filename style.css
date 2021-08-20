@@ -516,17 +516,50 @@ footer .mid-footer
     text-align: start;
 }
 
-.mid-footer .newsletter .up
+.newsletter .up
 {
     font-family: Poppins;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 10px;
     line-height: 15px;
     color: #504B4B;
 }
 
-.mid-footer .newsletter .no-spam
+.newsletter input
+{
+    margin-right: -3px;
+    margin: 0.4em 0;
+    border-radius: 0;
+    width: 209px;
+    height: 41px;
+    padding: 1em;
+    background: none;
+    color: #504B4C;
+    border: 2px solid #504B4C;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.newsletter .email-btn
+{
+    border-radius: 0;
+    width: 75px;
+    height: 41px;
+    background: #504B4C;
+    border: none;
+    text-align: center;
+    color: #EDEEEE;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.newsletter .no-spam
 {
     font-family: Poppins;
     font-style: normal;
