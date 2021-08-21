@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rokkit&display=swap');
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,6 +11,33 @@ body {
     font-family: "Poppins", sans-serif;
     background-color: #FBFBFB;
 }
+
+
+/*------------------
+    Scroll bar
+--------------------*/
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-left: 1px solid rgba(0, 0, 0, 0.068);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #504B4B;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/*-----------------
+    Section Titles
+------------------*/
 
 .section-title {
     display: flex;
@@ -290,16 +315,14 @@ img {
     background: #504B4B;
 }
 
-.container
-{
+.container {
     display: flex;
-    padding-top: 3.75em; 
+    padding-top: 3.75em;
     justify-content: center;
     align-items: center;
 }
 
-.container .card
-{
+.container .card {
     display: grid;
     margin: 2em;
     padding: 1em;
@@ -307,15 +330,13 @@ img {
     height: 398px;
 }
 
-.container .card
-{
+.container .card {
     background: #FCFBFB;
     color: #504B4B;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-.container .card.active
-{
+.container .card.active {
     background: #504B4B;
     color: #FCFBFB;
     width: 340px;
@@ -323,61 +344,52 @@ img {
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-
-.card .profile-pic
-{
+.card .profile-pic {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.card .client_id
-{
+.card .client_id {
     display: flex;
     margin: 0.5em;
     justify-content: center;
     align-items: center;
 }
 
-.card .client_id p
-{
+.card .client_id p {
     font-family: Rokkit;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 140%;
     letter-spacing: 0.06em;
-    margin-right: 8px; 
+    margin-right: 8px;
 }
 
-.card .review
-{
+.card .review {
     font-family: Ropa Sans;
     font-style: italic;
     font-weight: normal;
     font-size: 12px;
     line-height: 140%;
-/* or 17px */
+    /* or 17px */
     text-align: center;
     letter-spacing: 0.06em;
     padding: 0em 2em;
 }
 
-
-.card .rating
-{
+.card .rating {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container .cta-div
-{
-    padding-bottom: 3.75em; 
+.container .cta-div {
+    padding-bottom: 3.75em;
 }
 
-.container h2
-{
+.container h2 {
     font-family: Bebas Neue;
     font-style: normal;
     font-weight: normal;
@@ -386,11 +398,10 @@ img {
     /* identical to box height */
     color: #504B4B;
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
-    padding-bottom: 0.5em; 
+    padding-bottom: 0.5em;
 }
 
-.container .cta-btn
-{
+.container .cta-btn {
     width: 309px;
     height: 74px;
     background: #504B4B;
@@ -413,7 +424,7 @@ img {
     flex-direction: column;
     background: #504B4B;
     text-align: center;
-    padding: 2.5em 0em; 
+    padding: 2.5em 0em;
 }
 
 .connected h1 {
@@ -469,25 +480,23 @@ img {
     transform: translateX(-100px);
 }
 
+
 /*--------------------
         Footer
 --------------------*/
 
-footer
-{
+footer {
     margin: 2em 1em;
     text-align: center;
 }
 
-footer ul
-{
+footer ul {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-footer ul a
-{
+footer ul a {
     text-decoration: none;
     font-family: Bebas Neue;
     font-style: normal;
@@ -498,26 +507,22 @@ footer ul a
     color: #504B4C;
 }
 
-footer .mid-footer
-{
+footer .mid-footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 2em;
 }
 
-footer .mid-footer
-{
+footer .mid-footer {
     text-align: center;
 }
 
-.mid-footer .newsletter
-{
+.mid-footer .newsletter {
     text-align: start;
 }
 
-.newsletter .up
-{
+.newsletter .up {
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
@@ -526,8 +531,7 @@ footer .mid-footer
     color: #504B4B;
 }
 
-.newsletter input
-{
+.newsletter input {
     margin-right: -3px;
     margin: 0.4em 0;
     border-radius: 0;
@@ -543,8 +547,7 @@ footer .mid-footer
     line-height: 15px;
 }
 
-.newsletter .email-btn
-{
+.newsletter .email-btn {
     border-radius: 0;
     width: 75px;
     height: 41px;
@@ -559,8 +562,7 @@ footer .mid-footer
     line-height: 15px;
 }
 
-.newsletter .no-spam
-{
+.newsletter .no-spam {
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
@@ -569,23 +571,20 @@ footer .mid-footer
     color: #767676;
 }
 
-footer .end-footer
-{
+footer .end-footer {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     text-align: center;
     margin: 2em;
 }
 
-footer .end-footer .socials
-{
+footer .end-footer .socials {
     display: flex;
     justify-content: flex-end;
 }
 
-.socials img
-{
+.socials img {
     padding: 0 0.4em;
     width: 34px;
-    height: 24px; 
+    height: 24px;
 }
