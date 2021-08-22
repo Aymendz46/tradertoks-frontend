@@ -203,6 +203,7 @@ nav.inactive {
 main {
     display: flex;
     padding: 0 10%;
+    flex-wrap: wrap;
 }
 
 main h3 {
@@ -259,13 +260,11 @@ main .right {
 
 main .videos-section {
     width: 100%;
-    height: 600px;
     left: 981px;
     top: 136px;
     border: 1px solid #D3D3D3;
     box-sizing: border-box;
     border-radius: 2px;
-    overflow-y: auto;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -293,6 +292,11 @@ main .videos-section .top p {
     color: #000000;
     margin: 20px 30px;
     margin-bottom: 10px;
+}
+
+main .videos-section .bottom {
+    height: 400px;
+    overflow-y: auto;
 }
 
 
@@ -423,7 +427,7 @@ main .videos-list {
 
 .description {
     display: block;
-    width: 90%;
+    width: 65%;
 }
 
 .description .tabs {
@@ -519,6 +523,8 @@ main .videos-list {
 
 .qna .comment-container {
     /*padding: 0 10px;*/
+    display: flex;
+    flex-direction: column;
     border-top: 1px solid #504B4B;
     padding-top: 2rem;
 }
@@ -528,7 +534,16 @@ main .videos-list {
     padding-top: 0rem;
 }
 
-.qna .comment-container .comment .username {
+.qna .comment-container .comment-header {
+    display: flex;
+}
+
+.qna .comment-container .comment-header .user {
+    width: 10%;
+}
+
+.qna .comment-container .username {
+    align-self: center;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -538,7 +553,7 @@ main .videos-list {
     margin-bottom: 15px;
 }
 
-.qna .comment-container .comment .username .date {
+.qna .comment-container .username .date {
     font-weight: 300;
     font-size: 11px;
     margin-left: 1rem;
@@ -576,7 +591,7 @@ main .videos-list {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-top: 1rem;
+    margin-left: auto;
 }
 
 .qna .comment-container {
@@ -644,9 +659,7 @@ main .videos-list {
         Footer
 --------------------*/
 
-
-.mainn
-{
+.mainn {
     min-height: 100vh;
 }
 
@@ -655,8 +668,7 @@ footer {
     border: 1.8px solid #3B3B3B;
 }
 
-footer .ft-cont
-{
+footer .ft-cont {
     margin: 2em 1em;
 }
 
@@ -757,4 +769,90 @@ footer .end-footer .socials {
     padding: 0 0.4em;
     width: 34px;
     height: 24px;
+}
+
+
+/*-----------------------------
+        MEDIA QUERIES            
+-----------------------------*/
+
+@media only screen and (max-width: 769px) {
+    main .left,
+    main .right,
+    main .description {
+        width: 100%;
+    }
+    main .video {
+        position: relative;
+        width: 100%;
+        height: 200px;
+    }
+     ::-webkit-scrollbar {
+        width: 9px;
+    }
+     ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-left: 1px solid rgba(0, 0, 0, 0.068);
+    }
+     ::-webkit-scrollbar-thumb {
+        background: #504B4B;
+    }
+     ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    .videos-section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    main .videos-section .top {
+        border-top: 2px solid #D3D3D3;
+        border-bottom: none;
+        position: sticky;
+    }
+    .description .tabs {
+        display: grid;
+        padding: 0;
+        width: 100%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin: 2rem 0;
+    }
+    .description .tabs .tab {
+        margin: 0;
+    }
+    .qna .comment-container .comment-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .qna .comment-container .vote {
+        margin-left: 0;
+    }
+    footer .ft-cont ul {
+        display: none;
+    }
+    footer .mid-footer {
+        flex-direction: column;
+    }
+    footer .mid-footer img {
+        margin-bottom: 2rem;
+    }
+    footer .newsletter input {
+        width: 70%;
+    }
+    footer .newsletter .email-btn {
+        width: 30%;
+    }
+    footer .end-footer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        font-size: 20px;
+    }
+    footer .end-footer p {
+        font-size: 20px;
+    }
+    footer .end-footer .socials {
+        margin-bottom: 1rem;
+    }
 }
