@@ -120,13 +120,16 @@ nav {
 
 li {
     list-style: none;
-    margin: 1em;
+}
+
+header li {
+    margin: 1.5em 1.5em 1.5em 0em;
 }
 
 
 /* global styles for links inside lists */
 
-li a {
+header li a {
     text-decoration: none;
 }
 
@@ -152,7 +155,7 @@ li a {
     letter-spacing: 0em;
 }
 
-li .active {
+header li .active {
     font-weight: bold;
 }
 
