@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -485,9 +486,21 @@ img {
         Footer
 --------------------*/
 
+/* Footer fix */
+
+.mainn
+{
+	min-height: 100vh;
+}
+
 footer {
-    margin: 2em 1em;
     text-align: center;
+    border: 1.8px solid #3B3B3B;
+}
+
+footer .ft-cont
+{
+	margin: 2em 1em;
 }
 
 footer ul {
