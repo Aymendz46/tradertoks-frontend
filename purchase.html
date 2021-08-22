@@ -215,6 +215,10 @@
         });
 
         $('#to-purchase').click(function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
             $('#presentation').removeClass('active');
             $('#details').removeClass('active');
             $('#purchase').addClass('active');

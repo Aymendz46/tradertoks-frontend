@@ -763,6 +763,11 @@ footer .end-footer .socials {
 -----------------------------*/
 
 @media only screen and (max-width: 769px) {
+    .links {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
     .mainn {
         min-height: 100%;
     }
