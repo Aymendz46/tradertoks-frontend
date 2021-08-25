@@ -4,20 +4,78 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=5" />
-    <link rel="stylesheet" href="purchase.css">
+    <link rel="stylesheet" href="purchase2.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="navbar.js"></script>
+
     <title>Trader Toks | Welcome!</title>
 </head>
 
 <body>
-    <div class="mainn">
+    <div class="">
+        <header class="nav-desktop">
+            <a href="index.html"><img src="./imgs/Logo.svg" class="logo-link"></a>
+            <nav class="inactive">
+                <!--div class="overlay"></div-->
+                <ul class="links">
+                    <li><a href="./index.html" class="active">Home</a></li>
+                    <li><a href="./videos.html">Videos</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Crypto News</a></li>
+                    <li><a href="#">Recent Analytics</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </nav>
+            <a href="javascript:void(0);" class="icon open" onclick="displayMenu()">
+                <span class="material-icons">
+              menu      
+           </span>
+            </a>
+            <a href="javascript:void(0);" class="icon close" onclick="hideMenu()">
+                <span class="material-icons close">
+              close      
+           </span>
+            </a>
+        </header>
+
+        <header class="nav-mobile">
+            <a href="index.html"><img src="./imgs/Logo.svg" class="logo-link"></a>
+
+            <a href="javascript:void(0);" class="icon open" onclick="showMenuMobile()">
+                <span class="material-icons">
+                menu      
+                </span>
+            </a>
+        </header>
+        <div id="nav-modal" class="hide">
+            <div class="nav-modal-content">
+                <div class="top">
+                    <a href="index.html"><img src="./imgs/Logo.svg" class="logo-link"></a>
+                    <a href="javascript:void(0);" class="icon close" onclick="hideMenuMobile()">
+                        <span class="material-icons close">
+                        close      
+                        </span>
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html" class="active">Home</a></li>
+                        <li><a href="./videos.html">Videos</a></li>
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Crypto News</a></li>
+                        <li><a href="#">Recent Analytics</a></li>
+                        <li><a href="#">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
 
         <!-- meru-tab -->
-        <div class="menu-tab">
-            <span id="presentation" class="menu active">Presentation</span>
-            <span id="details" class="menu">Details</span>
-            <span id="purchase" class="menu">Purchase</span>
-        </div>
         <main>
             <!-- Presentation -->
             <div class="presentation show">
@@ -27,51 +85,42 @@
                     <img class="play-btn" src="imgs/play_btn.svg" alt="">
                 </div>
                 <div class="bottom">
-                    <div class="title">
-                        Course title
-                    </div>
                     <div class="continue">
-                        <button id="to-details" class="continue-btn">
-                            Continue
-                        </button>
+
                     </div>
                 </div>
             </div>
 
             <!-- Details -->
             <div class="details">
-                <h3>Details</h3>
                 <div class="top">
-                    <img src="imgs/chart.svg" alt="">
                     <h1>Course</h1>
                 </div>
-                <div class="bottom">
+
+                <div id="show-section" class="hide bottom">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error quasi a reiciendis iusto. Dolorum delectus ea labore corporis magni possimus. Nam sint odit, ullam fugiat expedita dolorum corrupti nostrum deleniti.</p>
                     <ol>
                         <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error quasi a reiciendis iusto. Dolorum delectus ea labore corporis magni possimus</li>
                         <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error quasi a reiciendis iusto. Dolorum delectus ea labore corporis magni possimus</li>
                         <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error quasi a reiciendis iusto. Dolorum delectus ea labore corporis magni possimus</li>
                     </ol>
-                    <div class="continue">
-                        <button id="to-presentation" class="previous-btn">
-                            Previous
-                        </button>
-                        <button id="to-purchase" class="continue-btn">
-                            Continue
-                        </button>
-                    </div>
                 </div>
+                <div id="show-more">
+                    Show more >
+                </div>
+
             </div>
 
             <!-- Purchase -->
-            <div class="purchase">
-                <div class="left">
-                    <div class="video">
-                        <img src="imgs/chart.svg" alt="">
-                    </div>
+            <div class="band">
+                <div class="section-title light">
+                    <h1>
+                        Payment details
+                    </h1>
                 </div>
+            </div>
+            <div class="purchase">
                 <div class="right">
-                    <h3>Payment details</h3>
                     <ul class="tabs">
                         <li id="paypal" class="tab">Paypal</li>
                         <li id="credit" class="tab active">Credit</li>
@@ -84,7 +133,7 @@
                             <br>
                             <div class="credit-number">
                                 <img src="imgs/mastercard.svg" alt="">
-                                <input class="input" id="credit-number" type="text" placeholder="****  ****  ****  ****">
+                                <input class="input" id="credit-number" type="text" maxlength="16" placeholder="****  ****  ****  ****" required>
                             </div>
                         </div>
 
@@ -93,13 +142,13 @@
                                 <!-- valid-until -->
                                 <label for="valid-until">Valid until</label>
                                 <br>
-                                <input class="input" id="valid-until" maxlength="5" type="text" placeholder="Month / Year">
+                                <input class="input" id="valid-until" maxlength="5" type="text" placeholder="Month / Year" required>
                             </div>
                             <div class="line-half">
                                 <!-- cvv -->
                                 <label for="cvv">CVV</label>
                                 <br>
-                                <input class="input" id="cvv" maxlength="3" type="text" placeholder="***">
+                                <input class="input" id="cvv" maxlength="3" type="text" placeholder="***" required>
                             </div>
                         </div>
 
@@ -107,15 +156,19 @@
                         <div class="line">
                             <label for="card-holder">Card holder</label>
                             <br>
-                            <input class="input" id="card-holder" type="text" placeholder="Your name and surname">
+                            <input class="input" id="card-holder" type="text" placeholder="Your name and surname" required>
                         </div>
 
-                        <div class="line text-right">
+                        <div class="line">
                             <button>
                                 Proceed to confirm
                             </button>
                         </div>
-
+                        <div class="message">
+                            <span>
+                                all your payments are secure
+                            </span>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -166,106 +219,14 @@
         });
     </script>
     <script>
-        $('#presentation').click(function() {
-            $('#presentation').addClass('active');
-            $('#details').removeClass('active');
-            $('#purchase').removeClass('active');
-
-            $('.details').removeClass('show');
-            $('.purchase').removeClass('show');
-            $('.presentation').addClass('show');
-        });
-        $('#details').click(function() {
-            $('#presentation').removeClass('active');
-            $('#details').addClass('active');
-            $('#purchase').removeClass('active');
-
-            $('.presentation').removeClass('show');
-            $('.purchase').removeClass('show');
-            $('.details').addClass('show');
-        });
-        $('#purchase').click(function() {
-            $('#presentation').removeClass('active');
-            $('#details').removeClass('active');
-            $('#purchase').addClass('active');
-
-            $('.presentation').removeClass('show');
-            $('.details').removeClass('show');
-            $('.purchase').addClass('show');
-        });
-
-        $('#to-presentation').click(function() {
-            $('#presentation').addClass('active');
-            $('#details').removeClass('active');
-            $('#purchase').removeClass('active');
-
-            $('.details').removeClass('show');
-            $('.purchase').removeClass('show');
-            $('.presentation').addClass('show');
-        });
-
-        $('#to-details').click(function() {
-            $('#presentation').removeClass('active');
-            $('#details').addClass('active');
-            $('#purchase').removeClass('active');
-
-            $('.presentation').removeClass('show');
-            $('.purchase').removeClass('show');
-            $('.details').addClass('show');
-        });
-
-        $('#to-purchase').click(function() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-            $('#presentation').removeClass('active');
-            $('#details').removeClass('active');
-            $('#purchase').addClass('active');
-
-            $('.presentation').removeClass('show');
-            $('.details').removeClass('show');
-            $('.purchase').addClass('show');
-        });
-    </script>
-    <script type="text/javascript">
-        const links = document.getElementsByClassName("links")[0];
-        const h = document.getElementsByTagName("header")[0];
-        const n = document.getElementsByTagName("nav")[0];
-
-        function displayMenu() {
-            const closeBtn = document.getElementsByClassName("close")[0];
-            const open = document.getElementsByClassName("open")[0];
-
-            if (links) {
-                closeBtn.style.display = "block";
-                h.classList.add("active");
-                n.classList.remove("inactive");
-                n.classList.add("active");
-                //links.style.transform = "translateY(0%)";
-                links.style.top = "0";
-                //links.classList.toggle("active");
-                open.style.display = "none";
+        $('#show-more').click(function() {
+            $('#show-section').toggleClass('hide');
+            if ($("#show-section").hasClass('hide')) {
+                $("#show-more").text('Show more >');
+            } else {
+                $("#show-more").text('Show less <');
             }
-        }
-
-        function hideMenu() {
-            //const links = document.getElementsByClassName("links")[0];
-            const closeBtn = document.getElementsByClassName("icon close")[0];
-            const open = document.getElementsByClassName("icon open")[0];
-
-            if (links) {
-                open.style.display = "block";
-                //links.style.transform = "translateY(-100%)";  
-                links.style.top = "-100%";
-                h.classList.remove("active");
-                n.classList.add("inactive");
-                n.classList.remove("active");
-
-                //links.classList.toggle("active");
-                closeBtn.style.display = "none";
-            }
-        }
+        });
     </script>
 </body>
 

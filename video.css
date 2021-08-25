@@ -109,7 +109,7 @@ body {
 
 /* navigation background style */
 
-nav {
+header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -192,10 +192,24 @@ header.active {
     background-position: right;
 }
 
+nav.active {
+    transform: translate(0px, 0);
+    animation: navanimate 0.5s ease-in;
+}
+
 nav.inactive {
     transform: translate(0px, -100px);
+    transition: 1s;
     /*visibility: hidden*/
-    ;
+}
+
+@keyframes navanimate {
+    0% {
+        transform: translate(0px, -100px);
+    }
+    100% {
+        transform: translate(0px, 0);
+    }
 }
 
 
@@ -438,6 +452,9 @@ main .videos-list {
     padding: 0;
     width: 70%;
     justify-content: space-between;
+    gap: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
 
 .description .tabs .tab {
@@ -824,6 +841,10 @@ footer .end-footer .socials {
     .description .tabs .tab {
         margin: 0;
     }
+    #qna {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
     .qna .comment-container .comment-header {
         flex-direction: column;
         align-items: center;
@@ -853,7 +874,7 @@ footer .end-footer .socials {
         font-size: 20px;
     }
     footer .end-footer p {
-        font-size: 20px;
+        font-size: 11px;
     }
     footer .end-footer .socials {
         margin-bottom: 1rem;
