@@ -1,10 +1,11 @@
-const links = document.getElementsByClassName("links")[0];
-const h = document.getElementsByTagName("header")[0];
-const n = document.getElementsByTagName("nav")[0];
-
 function displayMenu() {
+    const links = document.getElementsByClassName("links")[0];
+    const h = document.getElementsByTagName("header")[0];
+    const n = document.getElementsByTagName("nav")[0];
+
     const closeBtn = document.getElementsByClassName("close")[0];
     const open = document.getElementsByClassName("open")[0];
+    console.log(links);
 
     if (links) {
         closeBtn.style.display = "block";
@@ -19,6 +20,10 @@ function displayMenu() {
 }
 
 function hideMenu() {
+    const links = document.getElementsByClassName("links")[0];
+    const h = document.getElementsByTagName("header")[0];
+    const n = document.getElementsByTagName("nav")[0];
+
     //const links = document.getElementsByClassName("links")[0];
     const closeBtn = document.getElementsByClassName("icon close")[0];
     const open = document.getElementsByClassName("icon open")[0];

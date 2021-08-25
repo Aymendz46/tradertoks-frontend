@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=5" />
-    <link rel="stylesheet" href="video.css">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="navbar.js"></script>
-    <link rel="stylesheet" href="loading.css">
-    <script src="loading.js"></script>
+    <script src="js/navbar.js"></script>
+    <link rel="stylesheet" href="styles/loading.css">
+    <script src="js/loading.js"></script>
     <title>Trader Toks | Welcome!</title>
 </head>
 
@@ -20,7 +20,7 @@
         <!-------------------------->
         <!------Header------------>
         <header class="nav-desktop">
-            <a href="index.html"><img src="./imgs/Logo.svg" class="logo-link"></a>
+            <a href="index.html"><img src="images/logo/Logo.svg" class="logo-link"></a>
             <nav class="inactive">
                 <!--div class="overlay"></div-->
                 <ul class="links">
@@ -47,7 +47,7 @@
 
         <!------mobile's Header------------>
         <header class="nav-mobile">
-            <a href="index.html"><img src="./imgs/Logo.svg" class="logo-link"></a>
+            <a href="index.html"><img src="images/logo/Logo.svg" class="logo-link"></a>
 
             <a href="javascript:void(0);" class="icon open" onclick="showMenuMobile()">
                 <span class="material-icons">
@@ -59,7 +59,7 @@
         <div id="nav-modal" class="hide">
             <div class="nav-modal-content">
                 <div class="top">
-                    <a href="index.html"><img src="./imgs/Logo.svg" class="logo-link"></a>
+                    <a href="index.html"><img src="images/logo/Logo.svg" class="logo-link"></a>
                     <a href="javascript:void(0);" class="icon close" onclick="hideMenuMobile()">
                         <span class="material-icons close">
                         close      
@@ -91,7 +91,7 @@
                 </h3>
                 <div class="video">
                     Video
-                    <img class="play-btn" src="imgs/play_btn.svg" alt="">
+                    <img class="play-btn" src="images/components/play_btn.svg" alt="">
                 </div>
             </div>
             <!-------------------------->
@@ -114,14 +114,14 @@
                             <!-- Played -->
                             <li class="item">
                                 <div class="check">
-                                    <img src="imgs/played.svg" alt="">
+                                    <img src="images/components/played.svg" alt="">
                                 </div>
                                 <div class="detail">
                                     <div class="title">
                                         Lorem ipsum dolor sit
                                     </div>
                                     <div class="duration">
-                                        <img src="imgs/duration.svg" alt="">
+                                        <img src="images/components/duration.svg" alt="">
                                         <p>
                                             <span>4</span>
                                             <span>min</span>
@@ -138,14 +138,14 @@
                             <!-- Playing -->
                             <li class="item active">
                                 <div class="check">
-                                    <img src="imgs/playing.svg" alt="">
+                                    <img src="images/components/playing.svg" alt="">
                                 </div>
                                 <div class="detail">
                                     <div class="title">
                                         Lorem ipsum dolor sit
                                     </div>
                                     <div class="duration">
-                                        <img src="imgs/duration.svg" alt="">
+                                        <img src="images/components/duration.svg" alt="">
                                         <p>
                                             <span>4</span>
                                             <span>min</span>
@@ -162,14 +162,14 @@
                             <!-- not Played -->
                             <li class="item">
                                 <div class="check">
-                                    <img src="imgs/not_played.svg" alt="">
+                                    <img src="images/components/not_played.svg" alt="">
                                 </div>
                                 <div class="detail fixed">
                                     <div class="title">
                                         Lorem ipsum dolor sit
                                     </div>
                                     <div class="duration">
-                                        <img src="imgs/duration.svg" alt="">
+                                        <img src="images/components/duration.svg" alt="">
                                         <p>
                                             <span>4</span>
                                             <span>min</span>
@@ -181,14 +181,14 @@
                             <!-- not Played -->
                             <li class="item">
                                 <div class="check">
-                                    <img src="imgs/not_played.svg" alt="">
+                                    <img src="images/components/not_played.svg" alt="">
                                 </div>
                                 <div class="detail fixed">
                                     <div class="title">
                                         Lorem ipsum dolor sit
                                     </div>
                                     <div class="duration">
-                                        <img src="imgs/duration.svg" alt="">
+                                        <img src="images/components/duration.svg" alt="">
                                         <p>
                                             <span>4</span>
                                             <span>min</span>
@@ -200,14 +200,14 @@
                             <!-- not Played -->
                             <li class="item">
                                 <div class="check">
-                                    <img src="imgs/not_played.svg" alt="">
+                                    <img src="images/components/not_played.svg" alt="">
                                 </div>
                                 <div class="detail fixed">
                                     <div class="title">
                                         Lorem ipsum dolor sit
                                     </div>
                                     <div class="duration">
-                                        <img src="imgs/duration.svg" alt="">
+                                        <img src="images/components/duration.svg" alt="">
                                         <p>
                                             <span>4</span>
                                             <span>min</span>
@@ -243,7 +243,7 @@
                     <div class="comment-container">
                         <div class="comment-header">
                             <div class="user">
-                                <img src="imgs/user_pic.svg" alt="">
+                                <img src="images/components/user_pic.svg" alt="">
                             </div>
                             <div class="username">
                                 <span>username</span>
@@ -251,7 +251,7 @@
                             </div>
                             <div class="vote">
                                 <div class="up-vote">
-                                    <img src="imgs/arrow_up_active.svg" alt="">
+                                    <img src="images/components/arrow_up_active.svg" alt="">
                                 </div>
                                 <div class="nb-votes">
                                     2
@@ -270,7 +270,7 @@
                     <div class="comment-container">
                         <div class="comment-header">
                             <div class="user">
-                                <img src="imgs/user_pic.svg" alt="">
+                                <img src="images/components/user_pic.svg" alt="">
                             </div>
                             <div class="username">
                                 <span>username</span>
@@ -278,7 +278,7 @@
                             </div>
                             <div class="vote">
                                 <div class="up-vote">
-                                    <img src="imgs/arrow_up.svg" alt="">
+                                    <img src="images/components/arrow_up.svg" alt="">
                                 </div>
                                 <div class="nb-votes">
                                     0
@@ -338,7 +338,7 @@
                 <li><a href="#">Contact Me</a></li>
             </ul>
             <div class="mid-footer">
-                <img src="./imgs/TTfooterlogo.svg">
+                <img src="images/logo/TTfooterlogo.svg">
                 <div class="newsletter">
                     <p class="up">Stay updated with the latest news on the trading block X)</p>
                     <input type="email" name="email_add" placeholder="Enter your email"><button class="email-btn">GET IT!</button>
@@ -349,11 +349,11 @@
                 <div></div>
                 <p>CREATED BY <b>2 KINGS WEBSITES</b> | Copyright 2021 reserved to <b>Trader Toks.</b></p>
                 <div class="socials">
-                    <img src="./imgs/discorddark.svg">
-                    <img src="./imgs/IG.svg">
-                    <img src="./imgs/YouTubedrk.svg">
-                    <img src="./imgs/FB.svg">
-                    <img src="./imgs/Twitter.svg">
+                    <img src="images/social/discorddark.svg">
+                    <img src="images/social/IG.svg">
+                    <img src="images/social/YouTubedrk.svg">
+                    <img src="images/social/FB.svg">
+                    <img src="images/social/Twitter.svg">
                 </div>
             </div>
             <div class="credits">
