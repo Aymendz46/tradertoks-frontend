@@ -217,6 +217,17 @@ img {
     background-color: #504B4B;
 }
 
+.what .image {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.what .image img {
+    width: 50%;
+    margin: auto;
+}
+
 
 /*--------------------
         Review
@@ -298,6 +309,9 @@ img {
 
 .container .cta-div {
     padding-bottom: 3.75em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container h2 {
@@ -327,7 +341,7 @@ img {
 
 
 /*--------------------
-        What
+        Connected
 --------------------*/
 
 .connected {
@@ -457,6 +471,7 @@ img {
     }
     .what .content div:nth-child(1) {
         order: 2;
+        margin-bottom: 3rem;
     }
     .what .content div:nth-child(2) {
         order: 1;
@@ -466,6 +481,7 @@ img {
     }
     .what .content div:nth-child(4) {
         order: 4;
+        margin-bottom: 2rem;
     }
     .what .content .detail {
         padding: 3rem 2rem;
@@ -511,6 +527,12 @@ img {
     }
     #review-scroll::-webkit-scrollbar-thumb:hover {
         background: #555;
+    }
+    .connected h1 {
+        font-size: 55px;
+    }
+    .container h2 {
+        text-align: center;
     }
     /*-----Connected-------*/
     .connected .social {
