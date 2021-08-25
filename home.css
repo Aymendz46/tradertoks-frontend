@@ -35,44 +35,6 @@ body {
 }
 
 
-/*-----------------
-    Section Titles
-------------------*/
-
-.section-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 4rem;
-    padding-bottom: 2rem;
-}
-
-.section-title h1 {
-    display: inline-block;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 42px;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: #504B4B;
-    border-top: 3px solid #504B4B;
-    border-bottom: 3px solid #504B4B;
-    text-align: center;
-    padding: 1rem 1rem;
-}
-
-.section-title.light {
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-.section-title.light h1 {
-    color: #FBFBFB;
-    border-top: 3px solid #FBFBFB;
-    border-bottom: 3px solid #FBFBFB;
-}
-
-
 /*--------------------
         Left dots
 --------------------*/
@@ -201,7 +163,7 @@ nav.inactive {
         Main
 --------------------*/
 
-.main h1 {
+.main h2 {
     font-weight: 600;
     font-size: 32px;
     line-height: 123%;
@@ -243,15 +205,129 @@ img {
         Who
 --------------------*/
 
-.who {
-    margin: 0 10%;
+.newsletter-cont 
+{
+    font-family: 'Poppins';
+    margin: 4.5em 0 0 0;
+    background: #504B4B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px;
+    padding: 2em;
 }
 
-.who p {
+.newsletter .section-title
+{   
+    font-size: 48px;
+    line-height: 72px;
+    color: #EDEEEE;
+}
+
+.newsletter-cont .sub-title {
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.newsletter-mid
+{
+    padding: 1.5em 0;
+}
+
+.newsletter-mid input {
+    margin-right: -3px;
+    margin: 0.4em 0;
+    border-radius: 0;
+    width: 209px;
+    height: 41px;
+    padding: 1em;
+    background: none;
+    color: #fbfbfb;
+    border: 2px solid #fbfbfb;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.newsletter-mid .email-btn {
+    border-radius: 0;
+    width: 75px;
+    height: 41px;
+    background: #fbfbfb;
+    border: none;
+    text-align: center;
+    color: #504B4C;
+    font-size: 12px;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-    color: #797878;
+}
+
+.newsletter-cont .no-spam {
+    font-size: 10px;
+    color: #b9b7b7;
+}
+
+.newsletter-cont .section-title.light h2
+{
+    padding: 0;
+    border: none;
+}
+
+.section-title h2 span
+{
+    color: #44A26F;
+}
+
+.newsletter-cont .subsection
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-cont .section-title.light {
+    
+}
+
+
+/*-----------------
+    Section Titles
+------------------*/
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.section-title h2 {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 42px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #504B4B;
+    border-top: 3px solid #504B4B;
+    border-bottom: 3px solid #504B4B;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+.section-title.light {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.section-title.light h2 {
+    color: #FBFBFB;
+    border-top: 3px solid #FBFBFB;
+    border-bottom: 3px solid #FBFBFB;
 }
 
 
@@ -430,7 +506,7 @@ img {
     padding: 2.5em 0em;
 }
 
-.connected h1 {
+.connected h2 {
     font-family: Bebas Neue;
     font-style: normal;
     font-weight: normal;
