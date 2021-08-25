@@ -14,9 +14,9 @@
 
 <body>
 
-    <div w3-include-html="index.html"></div>
-
     <div class="mainn">
+        <!-------------------------->
+        <!------Header------------>
         <header class="nav-desktop">
             <a href="index.html"><img src="./imgs/Logo.svg" class="logo-link"></a>
             <nav class="inactive">
@@ -43,6 +43,7 @@
             </a>
         </header>
 
+        <!------mobile's Header------------>
         <header class="nav-mobile">
             <a href="index.html"><img src="./imgs/Logo.svg" class="logo-link"></a>
 
@@ -52,6 +53,7 @@
                 </span>
             </a>
         </header>
+        <!------mobile's Header modal------------>
         <div id="nav-modal" class="hide">
             <div class="nav-modal-content">
                 <div class="top">
@@ -74,12 +76,13 @@
                     </ul>
                 </nav>
             </div>
-
         </div>
 
-
+        <!-------------------------->
+        <!-----Main-------------->
         <main>
-            <!-- LEFT -->
+            <!-------------------------->
+            <!-- Video player -->
             <div class="left">
                 <h3>
                     Video title
@@ -89,8 +92,10 @@
                     <img class="play-btn" src="imgs/play_btn.svg" alt="">
                 </div>
             </div>
-            <!-- RIGHT -->
+            <!-------------------------->
+            <!-- Video list -->
             <div class="right">
+                <!-------------------------->
                 <div class="videos-section">
                     <div class="top">
                         <h5>
@@ -100,8 +105,9 @@
                             level
                         </p>
                     </div>
-
+                    <!-------------------------->
                     <div class="bottom">
+                        <!-------------------------->
                         <ul class="videos-list">
                             <!-- Played -->
                             <li class="item">
@@ -213,6 +219,8 @@
                 </div>
 
             </div>
+
+            <!-------------------------->
             <!-- DESCRIPTION -->
             <div class="description">
                 <ul class="tabs">
@@ -221,10 +229,12 @@
                     <li class="tab" id="qna"><span>Q n A</span></li>
                 </ul>
 
+                <!-------------------------->
                 <!-- Overview -->
                 <div class="overview show">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque facere ab, similique voluptate assumenda culpa debitis ut, rem libero, laborum perferendis sapiente maxime minus. Quia ea eligendi eveniet ducimus aliquam?</p>
                 </div>
+                <!-------------------------->
                 <!-- Q n A -->
                 <div class="qna">
                     <!-- Comment -->
@@ -282,9 +292,11 @@
                         </div>
                     </div>
                 </div>
+                <!-------------------------->
                 <!-- Notes -->
                 <div class="notes">
                 </div>
+                <!-------------------------->
                 <!-- Resources -->
                 <div class="resources">
                     <ul class="files">
@@ -310,6 +322,8 @@
         </main>
 
     </div>
+    <!-------------------------->
+    <!-------Footer----------->
     <footer>
         <div class="ft-cont">
             <ul>
@@ -394,7 +408,6 @@
             $('.resources').addClass('show');
         });
     </script>
-
 </body>
 
 </html>
