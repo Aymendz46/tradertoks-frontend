@@ -171,7 +171,7 @@ main {
 }
 
 .presentation .video {
-    height: 200px;
+    height: 25rem;
     background: #504B4B;
     border-radius: 2px;
     margin-bottom: 2rem;
@@ -591,6 +591,9 @@ main {
     /*--------Purchase--------*/
     .presentation {
         width: 100%;
+    }
+    .presentation .video {
+        height: 15rem;
     }
     .presentation h3 {
         display: block;
