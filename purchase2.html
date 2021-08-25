@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=5" />
-    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/purchase2.css">
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/footer.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -22,10 +22,9 @@
 </head>
 
 <body>
-
-    <div class="mainn">
-        <!-------------------------->
-        <!------Header------------>
+    <div class="">
+        <!----------------------->
+        <!------Header---------->
         <header class="nav-desktop">
             <a href="index.html"><img src="images/logo/Logo.svg" class="logo-link"></a>
             <nav class="inactive">
@@ -52,7 +51,7 @@
             </a>
         </header>
 
-        <!------mobile's Header------------>
+        <!------mobile's Header---------->
         <header class="nav-mobile">
             <a href="index.html"><img src="images/logo/Logo.svg" class="logo-link"></a>
 
@@ -62,7 +61,7 @@
                 </span>
             </a>
         </header>
-        <!------mobile's Header modal------------>
+        <!------mobile's Header Modal---------->
         <div id="nav-modal" class="hide">
             <div class="nav-modal-content">
                 <div class="top">
@@ -85,254 +84,116 @@
                     </ul>
                 </nav>
             </div>
+
         </div>
 
-        <!-------------------------->
-        <!-----Main-------------->
+        <!----------------------->
+        <!-- MAIN -->
         <main>
-            <!-------------------------->
-            <!-- Video player -->
-            <div class="left">
-                <h3>
-                    Video title
-                </h3>
+
+            <!----------------------->
+            <!-- PRESENTATION -->
+            <div class="presentation show">
+                <h3>Presentation</h3>
                 <div class="video">
-                    Video
+                    <img class="preview" src="images/product/chart.svg" alt="">
                     <img class="play-btn" src="images/components/play_btn.svg" alt="">
                 </div>
+                <div class="bottom">
+                    <div class="continue">
+
+                    </div>
+                </div>
             </div>
-            <!-------------------------->
-            <!-- Video list -->
-            <div class="right">
-                <!-------------------------->
-                <div class="videos-section">
-                    <div class="top">
-                        <h5>
-                            Course title
-                        </h5>
-                        <p>
-                            level
-                        </p>
-                    </div>
-                    <!-------------------------->
-                    <div class="bottom">
-                        <!-------------------------->
-                        <ul class="videos-list">
-                            <!-- Played -->
-                            <li class="item">
-                                <div class="check">
-                                    <img src="images/components/played.svg" alt="">
-                                </div>
-                                <div class="detail">
-                                    <div class="title">
-                                        Lorem ipsum dolor sit
-                                    </div>
-                                    <div class="duration">
-                                        <img src="images/components/duration.svg" alt="">
-                                        <p>
-                                            <span>4</span>
-                                            <span>min</span>
-                                        </p>
-                                    </div>
-                                    <div class="state completed">
-                                        <span>
-                                            Completed
-                                        </span>
-                                    </div>
-                                </div>
-                            </li>
 
-                            <!-- Playing -->
-                            <li class="item active">
-                                <div class="check">
-                                    <img src="images/components/playing.svg" alt="">
-                                </div>
-                                <div class="detail">
-                                    <div class="title">
-                                        Lorem ipsum dolor sit
-                                    </div>
-                                    <div class="duration">
-                                        <img src="images/components/duration.svg" alt="">
-                                        <p>
-                                            <span>4</span>
-                                            <span>min</span>
-                                        </p>
-                                    </div>
-                                    <div class="state playing">
-                                        <span>
-                                            Playing
-                                        </span>
-                                    </div>
-                                </div>
-                            </li>
+            <!----------------------->
+            <!-- DETAILS -->
+            <div class="details">
+                <div class="top">
+                    <h1>Course</h1>
+                </div>
 
-                            <!-- not Played -->
-                            <li class="item">
-                                <div class="check">
-                                    <img src="images/components/not_played.svg" alt="">
-                                </div>
-                                <div class="detail fixed">
-                                    <div class="title">
-                                        Lorem ipsum dolor sit
-                                    </div>
-                                    <div class="duration">
-                                        <img src="images/components/duration.svg" alt="">
-                                        <p>
-                                            <span>4</span>
-                                            <span>min</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <!-- not Played -->
-                            <li class="item">
-                                <div class="check">
-                                    <img src="images/components/not_played.svg" alt="">
-                                </div>
-                                <div class="detail fixed">
-                                    <div class="title">
-                                        Lorem ipsum dolor sit
-                                    </div>
-                                    <div class="duration">
-                                        <img src="images/components/duration.svg" alt="">
-                                        <p>
-                                            <span>4</span>
-                                            <span>min</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <!-- not Played -->
-                            <li class="item">
-                                <div class="check">
-                                    <img src="images/components/not_played.svg" alt="">
-                                </div>
-                                <div class="detail fixed">
-                                    <div class="title">
-                                        Lorem ipsum dolor sit
-                                    </div>
-                                    <div class="duration">
-                                        <img src="images/components/duration.svg" alt="">
-                                        <p>
-                                            <span>4</span>
-                                            <span>min</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-
-                        </ul>
-                    </div>
+                <div id="show-section" class="hide bottom">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error quasi a reiciendis iusto. Dolorum delectus ea labore corporis magni possimus. Nam sint odit, ullam fugiat expedita dolorum corrupti nostrum deleniti.</p>
+                    <ol>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error quasi a reiciendis iusto. Dolorum delectus ea labore corporis magni possimus</li>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error quasi a reiciendis iusto. Dolorum delectus ea labore corporis magni possimus</li>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error quasi a reiciendis iusto. Dolorum delectus ea labore corporis magni possimus</li>
+                    </ol>
+                </div>
+                <div id="show-more">
+                    Show more >
                 </div>
 
             </div>
 
-            <!-------------------------->
-            <!-- DESCRIPTION -->
-            <div class="description">
-                <ul class="tabs">
-                    <li class="tab active" id="overview"><span>Overview</span></li>
-                    <li class="tab" id="resources"><span>Resources</span></li>
-                    <li class="tab" id="qna"><span>Q n A</span></li>
-                </ul>
-
-                <!-------------------------->
-                <!-- Overview -->
-                <div class="overview show">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque facere ab, similique voluptate assumenda culpa debitis ut, rem libero, laborum perferendis sapiente maxime minus. Quia ea eligendi eveniet ducimus aliquam?</p>
+            <!----------------------->
+            <!-- PURCHASE -->
+            <div class="band">
+                <div class="section-title light">
+                    <h1>
+                        Payment details
+                    </h1>
                 </div>
-                <!-------------------------->
-                <!-- Q n A -->
-                <div class="qna">
-                    <!-- Comment -->
-                    <div class="comment-container">
-                        <div class="comment-header">
-                            <div class="user">
-                                <img src="images/components/user_pic.svg" alt="">
-                            </div>
-                            <div class="username">
-                                <span>username</span>
-                                <span class="date">2 days ago</span>
-                            </div>
-                            <div class="vote">
-                                <div class="up-vote">
-                                    <img src="images/components/arrow_up_active.svg" alt="">
-                                </div>
-                                <div class="nb-votes">
-                                    2
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comment">
-                            <p class="text-comment">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias eligendi dicta ea doloribus, deleniti ducimus a culpa numquam velit impedit laborum. Eos magni quasi accusamus error voluptatem vitae, cumque amet?</p>
-                            <div class="replies">
-                                <span>2 </span>
-                                <span> replies</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="comment-container">
-                        <div class="comment-header">
-                            <div class="user">
-                                <img src="images/components/user_pic.svg" alt="">
-                            </div>
-                            <div class="username">
-                                <span>username</span>
-                                <span class="date">2 days ago</span>
-                            </div>
-                            <div class="vote">
-                                <div class="up-vote">
-                                    <img src="images/components/arrow_up.svg" alt="">
-                                </div>
-                                <div class="nb-votes">
-                                    0
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comment">
-                            <p class="text-comment">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias eligendi dicta ea doloribus, deleniti ducimus a culpa numquam velit impedit laborum. Eos magni quasi accusamus error voluptatem vitae, cumque amet?</p>
-                            <div class="replies">
-                                <span>2 </span>
-                                <span> replies</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-------------------------->
-                <!-- Notes -->
-                <div class="notes">
-                </div>
-                <!-------------------------->
-                <!-- Resources -->
-                <div class="resources">
-                    <ul class="files">
-                        <li class="file notation">
-                            <span>Filename</span>
-                            <span>size</span>
-                        </li>
-                        <li class="file">
-                            <span>starterpack.rar</span>
-                            <span>4.2 mb</span>
-                        </li>
-                        <li class="file">
-                            <span>speech.txt</span>
-                            <span>0.2 mb</span>
-                        </li>
-                        <li class="file">
-                            <span>image.png</span>
-                            <span>1.2 mb</span>
-                        </li>
+            </div>
+            <div class="purchase">
+                <div class="right">
+                    <ul class="tabs">
+                        <li id="paypal" class="tab">Paypal</li>
+                        <li id="credit" class="tab active">Credit</li>
+                        <li id="wallet" class="tab">Wallet</li>
                     </ul>
+                    <form class="credit">
+                        <!-- credit number -->
+                        <div class="line">
+                            <label for="credit-number">Card Number</label>
+                            <br>
+                            <div class="credit-number">
+                                <img src="images/components/mastercard.svg" alt="">
+                                <input class="input" id="credit-number" type="text" maxlength="16" placeholder="****  ****  ****  ****" required>
+                            </div>
+                        </div>
+
+                        <div class="line-row">
+                            <div class="line-half">
+                                <!-- valid-until -->
+                                <label for="valid-until">Valid until</label>
+                                <br>
+                                <input class="input" id="valid-until" maxlength="5" type="text" placeholder="Month / Year" required>
+                            </div>
+                            <div class="line-half">
+                                <!-- cvv -->
+                                <label for="cvv">CVV</label>
+                                <br>
+                                <input class="input" id="cvv" maxlength="3" type="text" placeholder="***" required>
+                            </div>
+                        </div>
+
+                        <!-- card holder -->
+                        <div class="line">
+                            <label for="card-holder">Card holder</label>
+                            <br>
+                            <input class="input" id="card-holder" type="text" placeholder="Your name and surname" required>
+                        </div>
+
+                        <div class="line">
+                            <button>
+                                Proceed to confirm
+                            </button>
+                        </div>
+                        <div class="message">
+                            <span>
+                                all your payments are secure
+                            </span>
+                        </div>
+                    </form>
                 </div>
             </div>
         </main>
-
     </div>
-    <!-------------------------->
-    <!-------Footer----------->
+
+    <!----------------------->
+    <!------Footer------->
     <footer>
         <div class="ft-cont">
             <ul>
@@ -374,53 +235,25 @@
         </div>
     </div>
 
+
+
     <script>
-        $('#overview').click(function() {
-            $('#overview').addClass('active');
-            $('#qna').removeClass('active');
-            $('#notes').removeClass('active');
-            $('#resources').removeClass('active');
-
-            $('.overview').addClass('show');
-            $('.qna').removeClass('show');
-            $('.notes').removeClass('show');
-            $('.resources').removeClass('show');
+        $('#valid-until').keypress(function(e) {
+            var e = $('#valid-until');
+            var length = e.val().length;
+            if (length == 2) {
+                $('#valid-until').val(e.val() + '/');
+            }
         });
-
-        $('#qna').click(function() {
-            $('#overview').removeClass('active');
-            $('#qna').addClass('active');
-            $('#notes').removeClass('active');
-            $('#resources').removeClass('active');
-
-            $('.overview').removeClass('show');
-            $('.qna').addClass('show');
-            $('.notes').removeClass('show');
-            $('.resources').removeClass('show');
-        });
-
-        $('#notes').click(function() {
-            $('#overview').removeClass('active');
-            $('#qna').removeClass('active');
-            $('#notes').addClass('active');
-            $('#resources').removeClass('active');
-
-            $('.overview').removeClass('show');
-            $('.qna').removeClass('show');
-            $('.notes').addClass('show');
-            $('.resources').removeClass('show');
-        });
-
-        $('#resources').click(function() {
-            $('#overview').removeClass('active');
-            $('#qna').removeClass('active');
-            $('#notes').removeClass('active');
-            $('#resources').addClass('active');
-
-            $('.overview').removeClass('show');
-            $('.qna').removeClass('show');
-            $('.notes').removeClass('show');
-            $('.resources').addClass('show');
+    </script>
+    <script>
+        $('#show-more').click(function() {
+            $('#show-section').toggleClass('hide');
+            if ($("#show-section").hasClass('hide')) {
+                $("#show-more").text('Show more >');
+            } else {
+                $("#show-more").text('Show less <');
+            }
         });
     </script>
 </body>
