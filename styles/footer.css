@@ -56,7 +56,7 @@
      margin-right: -3px;
      margin: 0.4em 0;
      border-radius: 0;
-     width: 209px;
+     width: 285px;
      height: 41px;
      padding: 1em;
      background: none;
@@ -71,7 +71,8 @@
  .newsletter .email-btn {
      border-radius: 0;
      width: 75px;
-     height: 41px;
+     height: 40px;
+     margin: -75px;
      background: #504B4C;
      border: none;
      text-align: center;
@@ -123,11 +124,26 @@
      footer .mid-footer img {
          margin-bottom: 2rem;
      }
+
+     .mid-footer .newsletter
+     {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+
+     .newsletter .email-input-d
+     {
+        width: 90%;
+     }
+
      footer .newsletter input {
-         width: 70%;
+         width: 100%;
      }
      footer .newsletter .email-btn {
-         width: 30%;
+         margin: -85px;
      }
      footer .end-footer {
          display: flex;
