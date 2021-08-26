@@ -689,7 +689,7 @@ img {
         margin-top: 3rem;
     }
     /*--------Main -----------*/
-    
+
     .main .right {
         position: relative;
     }
@@ -907,6 +907,13 @@ img {
         padding-left: 0;
         padding-right: 0;
         width: 70%;
+    }
+
+    .vids .discover h1
+    {
+        text-align: center;
+        width: 80%;
+        font-size: 48px;
     }
 
     .vids .container
