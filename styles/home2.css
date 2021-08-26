@@ -55,8 +55,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 3em 0;
 }
 
 .section-title h1 {
@@ -262,6 +261,7 @@ img {
 
 .who .first
 {
+    height: 89vh;
     width: 70%;
     padding: 0 0.5em 0 0;
 }
