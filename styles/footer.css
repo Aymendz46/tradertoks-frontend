@@ -73,7 +73,6 @@
      border-radius: 0;
      width: 75px;
      height: 40px;
-     margin: -75px;
      background: #504B4C;
      border: none;
      text-align: center;
@@ -83,7 +82,7 @@
      font-weight: 500;
      font-size: 12px;
      line-height: 15px;
-     margin: 0.4em 0;
+     margin: 0.4em 0 0.4em -75px;
  }
  
  .newsletter .no-spam {
@@ -142,7 +141,7 @@
          width: 100%;
      }
      footer .newsletter .email-btn {
-         margin: -75px;
+         margin: 0.7em 0 0.7em -75px;
      }
      footer .end-footer {
          display: flex;
