@@ -250,7 +250,7 @@ img {
 --------------------*/
 
 .who {
-    margin: 0 10%;
+    margin: 0 10% 3em 10%;
     width: 80%;
 }
 
@@ -258,6 +258,14 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.who .container .second h2
+{
+    font-style: normal;
+    font-size: 48px;
+    line-height: 72px;
+    color: #504B4B;
 }
 
 .who .first
