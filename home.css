@@ -1,0 +1,680 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #FBFBFB;
+}
+
+
+/*------------------
+    Scroll bar
+--------------------*/
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-left: 1px solid rgba(0, 0, 0, 0.068);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #504B4B;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/*--------------------
+        Left dots
+--------------------*/
+
+.left-dots {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 30%;
+    left: 3%;
+    z-index: 2;
+}
+
+.dots {
+    display: inline-block;
+    height: 15px;
+    background: rgba(80, 75, 75, 0.45);
+    width: 15px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.dots.active {
+    background: #504B4B;
+}
+
+
+/*-----------------------
+        NavBar
+-------------------------*/
+
+
+/* navigation background style */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    transition: top ease-in-out 1s;
+}
+
+
+/* global style for lists*/
+
+li {
+    list-style: none;
+}
+
+header li {
+    margin: 1.5em 1.5em 1.5em 0em;
+}
+
+
+/* global styles for links inside lists */
+
+header li a {
+    text-decoration: none;
+}
+
+
+/* links inside lists of the class .links style */
+
+.links li a {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F2ECED;
+}
+
+
+/* elements inside links class, style */
+
+.links {
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    letter-spacing: 0em;
+}
+
+header li .active {
+    font-weight: bold;
+}
+
+.icon.close {
+    display: none;
+    z-index: 1111;
+    transition: all 1s ease-in-out;
+}
+
+.icon.open .material-icons {
+    color: #303030;
+}
+
+.material-icons {
+    font-size: 38px;
+    color: #f2eced;
+}
+
+header {
+    background: #fbfbfb;
+    backdrop-filter: blur(21px);
+    padding: 1em 2.5em 1em 2.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #fbfbfb 50%, rgba(80, 75, 75, 0.9) 50%) left;
+    background-size: 200%;
+    transition: 0.9s ease-out;
+}
+
+header.active {
+    background-position: right;
+}
+
+nav.inactive {
+    transform: translate(0px, -100px);
+    /*visibility: hidden*/
+    ;
+}
+
+
+/*--------------------
+        Main
+--------------------*/
+
+.main h2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 123%;
+    letter-spacing: 0.135em;
+    color: #504B4B;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.right {
+    position: relative;
+}
+
+.image-bottom {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80%;
+    z-index: -1;
+}
+
+.image-top {
+    padding-top: 30px;
+    padding-left: 30%;
+    width: 80%;
+}
+
+img {
+    display: block;
+}
+
+
+/*--------------------
+        Who
+--------------------*/
+
+.newsletter-cont 
+{
+    font-family: 'Poppins';
+    margin: 4.5em 0 0 0;
+    background: #504B4B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px;
+    padding: 2em;
+}
+
+.newsletter .section-title
+{   
+    font-size: 48px;
+    line-height: 72px;
+    color: #EDEEEE;
+}
+
+.newsletter-cont .sub-title {
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.newsletter-mid
+{
+    padding: 1.5em 0;
+}
+
+.newsletter-mid input {
+    margin-right: -3px;
+    margin: 0.4em 0;
+    border-radius: 0;
+    width: 209px;
+    height: 41px;
+    padding: 1em;
+    background: none;
+    color: #fbfbfb;
+    border: 2px solid #fbfbfb;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.newsletter-mid .email-btn {
+    border-radius: 0;
+    width: 75px;
+    height: 41px;
+    background: #fbfbfb;
+    border: none;
+    text-align: center;
+    color: #504B4C;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.newsletter-cont .no-spam {
+    font-size: 10px;
+    color: #b9b7b7;
+}
+
+.newsletter-cont .section-title.light h2
+{
+    padding: 0;
+    border: none;
+}
+
+.section-title h2 span
+{
+    color: #44A26F;
+}
+
+.newsletter-cont .subsection
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-cont .section-title.light {
+    
+}
+
+
+/*-----------------
+    Section Titles
+------------------*/
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.section-title h2 {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 42px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #504B4B;
+    border-top: 3px solid #504B4B;
+    border-bottom: 3px solid #504B4B;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+.section-title.light {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.section-title.light h2 {
+    color: #FBFBFB;
+    border-top: 3px solid #FBFBFB;
+    border-bottom: 3px solid #FBFBFB;
+}
+
+
+/*--------------------
+        What
+--------------------*/
+
+.what .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.what .content img {
+    width: 100%;
+}
+
+.what .content .detail {
+    padding: 3rem 5rem;
+}
+
+.what .content .detail h3 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.what .content .detail p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.what .content .detail .line {
+    display: block;
+    width: 80px;
+    height: 2px;
+    margin: 2rem;
+}
+
+.what .content .detail.dark {
+    background-color: #504B4B;
+    color: #D3D3D3;
+}
+
+.what .content .detail.dark .line {
+    background-color: #fbfbfb;
+}
+
+.what .content .detail.light {
+    background-color: #FBFBFB;
+}
+
+.what .content .detail.light .line {
+    background-color: #504B4B;
+}
+
+
+/*--------------------
+        Review
+--------------------*/
+
+.review .band {
+    background: #504B4B;
+}
+
+.container {
+    display: flex;
+    padding-top: 3.75em;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card {
+    display: grid;
+    margin: 2em;
+    padding: 1em;
+    width: 320px;
+    height: 398px;
+}
+
+.container .card {
+    background: #FCFBFB;
+    color: #504B4B;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.container .card.active {
+    background: #504B4B;
+    color: #FCFBFB;
+    width: 340px;
+    height: 422px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.card .profile-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .client_id {
+    display: flex;
+    margin: 0.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .client_id p {
+    font-family: Rokkit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.06em;
+    margin-right: 8px;
+}
+
+.card .review {
+    font-family: Ropa Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 140%;
+    /* or 17px */
+    text-align: center;
+    letter-spacing: 0.06em;
+    padding: 0em 2em;
+}
+
+.card .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .cta-div {
+    padding-bottom: 3.75em;
+}
+
+.container h2 {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 77px;
+    /* identical to box height */
+    color: #504B4B;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    padding-bottom: 0.5em;
+}
+
+.container .cta-btn {
+    width: 309px;
+    height: 74px;
+    background: #504B4B;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+    border: none;
+    color: #FBFBFB;
+}
+
+
+/*--------------------
+        What
+--------------------*/
+
+.connected {
+    display: flex;
+    flex-direction: column;
+    background: #504B4B;
+    text-align: center;
+    padding: 2.5em 0em;
+}
+
+.connected h2 {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 77px;
+    color: #FBFBFB;
+}
+
+.connected .line {
+    display: block;
+    width: 80px;
+    height: 2px;
+    margin: auto;
+    background-color: #FBFBFB;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.connected .social {
+    position: relative;
+    margin: auto;
+    padding: 10rem;
+}
+
+.connected .circle {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    transform: translate(43%, 0);
+}
+
+.connected .circle img {
+    position: absolute;
+}
+
+.connected .circle img:nth-of-type(1) {
+    transform: translateY(-100px);
+}
+
+.connected .circle img:nth-of-type(2) {
+    transform: translateX(+100px);
+}
+
+.connected .circle img:nth-of-type(3) {
+    transform: translateY(100px);
+}
+
+.connected .circle img:nth-of-type(4) {
+    transform: translateX(-100px);
+}
+
+
+/*--------------------
+        Footer
+--------------------*/
+
+
+/* Footer fix */
+
+.mainn {
+    min-height: 100vh;
+}
+
+footer {
+    text-align: center;
+    border: 1.8px solid #3B3B3B;
+}
+
+footer .ft-cont {
+    margin: 2em 1em;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul a {
+    text-decoration: none;
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #504B4C;
+}
+
+footer .mid-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2em;
+}
+
+footer .mid-footer {
+    text-align: center;
+}
+
+.mid-footer .newsletter {
+    text-align: start;
+}
+
+.newsletter .up {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 15px;
+    color: #504B4B;
+}
+
+.newsletter input {
+    margin-right: -3px;
+    margin: 0.4em 0;
+    border-radius: 0;
+    width: 209px;
+    height: 41px;
+    padding: 1em;
+    background: none;
+    color: #504B4C;
+    border: 2px solid #504B4C;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.newsletter .email-btn {
+    border-radius: 0;
+    width: 75px;
+    height: 41px;
+    background: #504B4C;
+    border: none;
+    text-align: center;
+    color: #EDEEEE;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.newsletter .no-spam {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    color: #767676;
+}
+
+footer .end-footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    text-align: center;
+    margin: 2em;
+}
+
+footer .end-footer .socials {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.socials img {
+    padding: 0 0.4em;
+    width: 34px;
+    height: 24px;
+}
