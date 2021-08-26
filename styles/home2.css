@@ -116,7 +116,7 @@ body {
 
 .newsletter-cont 
 {
-    margin: 4.5em 0 0 0;
+    margin: 3em 0 0 0;
     background: #504B4B;
     display: flex;
     flex-direction: column;
@@ -691,7 +691,7 @@ img {
     /*--------Main -----------*/
     .main .right {
         position: relative;
-        margin: 5% 10%;
+        margin: 5% 10% 0 10%;;
     }
     .image-bottom {
         position: absolute;
@@ -700,7 +700,7 @@ img {
         left: 0;
         width: 90%;
         z-index: -1;
-        /* margin: auto; */
+        margin: auto;
         /* padding: 0 10%; */
     }
     .image-top {
