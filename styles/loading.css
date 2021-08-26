@@ -21,9 +21,11 @@
 @keyframes logoFade {
     0% {
         background: black;
+        -webkit-background: black;
     }
     100% {
         background: #00000042;
+        -webkit-background: #00000042;
     }
 }
 
