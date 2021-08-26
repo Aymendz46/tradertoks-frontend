@@ -250,7 +250,7 @@ img {
 --------------------*/
 
 .who {
-    margin: 0 10% 3em 10%;
+    margin: 0 10%;
     width: 80%;
 }
 
@@ -258,14 +258,6 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.who .container .second h2
-{
-    font-style: normal;
-    font-size: 48px;
-    line-height: 72px;
-    color: #504B4B;
 }
 
 .who .first
@@ -697,9 +689,9 @@ img {
         margin-top: 3rem;
     }
     /*--------Main -----------*/
-
     .main .right {
         position: relative;
+        margin: 5% 10%;
     }
     .image-bottom {
         position: absolute;
@@ -708,7 +700,7 @@ img {
         left: 0;
         width: 90%;
         z-index: -1;
-        margin: auto;
+        /* margin: auto; */
         /* padding: 0 10%; */
     }
     .image-top {
@@ -763,15 +755,16 @@ img {
     }
 
     .who p {
-        font-family: Poppins;
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
         color: #797878;
+        margin: 1.5em 0;
     }
 
     .who .second {
         padding: 0 5%;
+        text-align: center;
     }
 
     .who .second h2
@@ -788,6 +781,11 @@ img {
     .who .first .image-bottom
     {
         display: none;
+    }
+
+    .who .container .first img
+    {
+        width: 100vw;        
     }
 
     /*---What ----*/
@@ -840,7 +838,7 @@ img {
     /*----course----*/
     .course
     {
-        padding-top: 3.5em;
+        padding-top: 3em;
     }
 
     .course .container {
@@ -917,13 +915,6 @@ img {
         width: 70%;
     }
 
-    .vids .discover h1
-    {
-        text-align: center;
-        width: 80%;
-        font-size: 48px;
-    }
-
     .vids .container
     {
         flex-direction: column;
@@ -931,7 +922,7 @@ img {
 
     .vids .first
     {
-        width: auto;
+        width: 100vw;
     }
 
     .vids p {
@@ -943,8 +934,13 @@ img {
         color: #797878;
     }
 
+    .vids .container .first img
+    {
+        width: 100vw;        
+    }
+
     .vids .second {
-        padding: 0 5%;
+        padding: 3em 1em;
     }
 
     .vids .second h2
@@ -961,6 +957,18 @@ img {
     .vids .first .image-bottom
     {
         display: none;
+    }
+
+    .vids .discover
+    {
+        padding: 0;
+    }
+
+    .vids .discover h1
+    {
+        font-size: 48px;
+        text-align: center;
+        padding: 0.1em 1em;
     }
 
     /*-----Connected-------*/
