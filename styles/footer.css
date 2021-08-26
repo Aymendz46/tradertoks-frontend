@@ -15,6 +15,7 @@
      display: flex;
      justify-content: center;
      align-items: center;
+     gap: 2rem;
  }
  
  footer ul a {
@@ -82,6 +83,7 @@
      font-weight: 500;
      font-size: 12px;
      line-height: 15px;
+     margin: 0.4em 0;
  }
  
  .newsletter .no-spam {
@@ -103,6 +105,7 @@
  footer .end-footer .socials {
      display: flex;
      justify-content: flex-end;
+     gap: 1rem;
  }
  
  .socials img {
@@ -113,8 +116,8 @@
  
  @media only screen and (max-width: 769px) {
      /*------------------
-            Footer
-    -------------------*/
+           Footer
+   -------------------*/
      footer .ft-cont ul {
          display: none;
      }
@@ -124,22 +127,18 @@
      footer .mid-footer img {
          margin-bottom: 2rem;
      }
-
-     .mid-footer .newsletter
-     {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+     .mid-footer .newsletter {
+         display: flex;
+         width: 100%;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
      }
-
-     .newsletter .email-input-d
-     {
-        width: 90%;
+     .newsletter .email-input-d {
+         width: 90%;
      }
-
      footer .newsletter input {
+         margin: 0;
          width: 100%;
      }
      footer .newsletter .email-btn {
@@ -150,11 +149,20 @@
          flex-direction: column-reverse;
          align-items: center;
          font-size: 20px;
+         margin: 0;
      }
      footer .end-footer p {
          font-size: 11px;
      }
      footer .end-footer .socials {
          margin-bottom: 1rem;
+         margin-bottom: 1rem;
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+     }
+     .socials img {
+         padding: 0 0.4em;
+         width: 50px;
      }
  }

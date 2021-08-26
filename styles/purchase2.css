@@ -7,13 +7,20 @@
     Scroll bar
 --------------------*/
 
-* {
+html {
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
     margin: 0;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
     background-color: #FBFBFB;
 }
 
@@ -68,7 +75,6 @@ body {
     display: inline-block;
     font-weight: bold;
     font-size: 28px;
-    line-height: 42px;
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: #706969;
@@ -88,7 +94,6 @@ body {
     border-top: 2px solid #FBFBFB;
     border-bottom: 2px solid #FBFBFB;
     font-size: 15px;
-    line-height: 22px;
 }
 
 
@@ -210,7 +215,6 @@ main {
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 30px;
     letter-spacing: 0.3em;
     color: #000000;
 }
@@ -250,7 +254,6 @@ main {
     font-style: normal;
     font-weight: 800;
     font-size: 24px;
-    line-height: 36px;
     letter-spacing: 0.3em;
     color: #000000;
 }
@@ -259,8 +262,7 @@ main {
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
-    font-size: 17px;
-    line-height: 30px;
+    font-size: 12px;
     letter-spacing: 0.3em;
     color: #000000;
 }
@@ -274,8 +276,7 @@ main {
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
-    font-size: 13px;
-    line-height: 25px;
+    font-size: 12px;
     letter-spacing: 0.3em;
     color: #000000;
 }
@@ -340,7 +341,6 @@ main {
     font-style: normal;
     font-weight: normal;
     font-size: 25px;
-    line-height: 37px;
     letter-spacing: 0.1em;
     color: #000000;
 }
@@ -362,7 +362,6 @@ main {
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 18px;
     letter-spacing: 0.095em;
     color: #504B4B;
 }
@@ -417,7 +416,6 @@ main {
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
-    line-height: 18px;
     color: #504B4C;
 }
 
@@ -430,7 +428,6 @@ main {
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
-    line-height: 18px;
     letter-spacing: 1px;
     color: #504B4C;
 }
@@ -444,7 +441,6 @@ main {
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
-    line-height: 18px;
     color: #504B4C;
 }
 
@@ -468,7 +464,6 @@ main {
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 18px;
     align-items: center;
     color: #EDEEEE;
     padding: 0.8em 2em;
@@ -494,7 +489,6 @@ main {
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
-    line-height: 22px;
     /* identical to box height */
     display: flex;
     color: #000000;
@@ -602,7 +596,6 @@ main {
         font-style: normal;
         font-weight: normal;
         font-size: 20px;
-        line-height: 30px;
         letter-spacing: 0.3em;
         color: #000000;
     }
@@ -649,7 +642,6 @@ main {
         font-style: normal;
         font-weight: normal;
         font-size: 20px;
-        line-height: 30px;
         /* identical to box height */
         letter-spacing: 0.3em;
         color: #000000;
@@ -668,7 +660,6 @@ main {
         font-style: normal;
         font-weight: normal;
         font-size: 15px;
-        line-height: 25px;
         letter-spacing: 0.3em;
         color: #000000;
         margin-bottom: 2rem;
@@ -678,7 +669,6 @@ main {
         font-style: normal;
         font-weight: normal;
         font-size: 10px;
-        line-height: 15px;
         letter-spacing: 0.3em;
         color: #000000;
         padding: 5%;
@@ -709,6 +699,5 @@ main {
     }
     .purchase .message span {
         font-size: 13px;
-        line-height: 19px;
     }
 }

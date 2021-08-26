@@ -7,13 +7,20 @@
     Scroll bar
 --------------------*/
 
-* {
+html {
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
     margin: 0;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
     background-color: #FBFBFB;
 }
 
@@ -56,7 +63,6 @@ body {
     display: inline-block;
     font-weight: bold;
     font-size: 28px;
-    line-height: 42px;
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: #504B4B;
@@ -112,7 +118,6 @@ body {
 .main h1 {
     font-weight: 600;
     font-size: 32px;
-    line-height: 123%;
     letter-spacing: 0.135em;
     color: #504B4B;
 }
@@ -122,6 +127,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: auto;
+    gap: 10%;
 }
 
 .right {
@@ -157,8 +163,7 @@ img {
 
 .who p {
     font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 18px;
     color: #797878;
 }
 
@@ -181,16 +186,22 @@ img {
     padding: 3rem 5rem;
 }
 
+.what .content .detail.dark {
+    padding-left: 20%;
+}
+
+.what .content .detail.light {
+    padding-right: 20%;
+}
+
 .what .content .detail h3 {
     font-weight: bold;
     font-size: 24px;
-    line-height: 36px;
 }
 
 .what .content .detail p {
     font-weight: normal;
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 19px;
 }
 
 .what .content .detail .line {
@@ -284,17 +295,15 @@ img {
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
-    line-height: 140%;
     letter-spacing: 0.06em;
     margin-right: 8px;
 }
 
 .card .review {
-    font-family: Ropa Sans;
+    font-family: 'Poppins';
     font-style: italic;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 140%;
+    font-size: 13px;
     /* or 17px */
     text-align: center;
     letter-spacing: 0.06em;
@@ -312,14 +321,14 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: auto;
 }
 
 .container h2 {
-    font-family: Bebas Neue;
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: normal;
-    font-size: 64px;
-    line-height: 77px;
+    font-size: 35px;
     /* identical to box height */
     color: #504B4B;
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
@@ -333,7 +342,6 @@ img {
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
-    line-height: 30px;
     letter-spacing: -0.01em;
     border: none;
     color: #FBFBFB;
@@ -353,11 +361,10 @@ img {
 }
 
 .connected h1 {
-    font-family: Bebas Neue;
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: normal;
-    font-size: 64px;
-    line-height: 77px;
+    font-size: 35px;
     color: #FBFBFB;
 }
 
@@ -419,6 +426,7 @@ img {
     }
     .main {
         flex-direction: column;
+        margin-top: 3rem;
     }
     /*--------Main -----------*/
     .main .right {
@@ -459,8 +467,7 @@ img {
         font-family: Poppins;
         font-style: normal;
         font-weight: 500;
-        font-size: 14px;
-        line-height: 21px;
+        font-size: 18px;
         color: #797878;
     }
     /*---What ----*/
@@ -485,6 +492,12 @@ img {
     }
     .what .content .detail {
         padding: 3rem 2rem;
+    }
+    .what .content .detail.dark {
+        padding-left: 10%;
+    }
+    .what .content .detail.light {
+        padding-right: 10%;
     }
     .what .content .detail .line {
         display: block;
@@ -517,22 +530,38 @@ img {
     }
     #review-scroll::-webkit-scrollbar {
         height: 10px;
+        -webkit-appearance: none;
     }
     #review-scroll::-webkit-scrollbar-track {
         background: transparent;
         border-left: 1px solid rgba(0, 0, 0, 0.068);
+        border-radius: 10px;
+        background-color: #ffffff;
     }
     #review-scroll::-webkit-scrollbar-thumb {
         background: #504B4B;
+        background-color: rgba(0, 0, 0, .5);
+        border-radius: 10px;
+        border: 2px solid #ffffff;
     }
     #review-scroll::-webkit-scrollbar-thumb:hover {
         background: #555;
     }
+    #review-scroll::-webkit-scrollbar:vertical {
+        width: 12px;
+    }
+    #review-scroll::-webkit-scrollbar:horizontal {
+        height: 12px;
+    }
     .connected h1 {
-        font-size: 55px;
+        font-size: 30px;
+        padding: 0 1rem;
+        margin-top: 2rem;
     }
     .container h2 {
         text-align: center;
+        padding: 0 1rem;
+        font-size: 30px;
     }
     /*-----Connected-------*/
     .connected .social {
@@ -678,12 +707,16 @@ img {
     animation: floatUp20 6s ease-in-out infinite;
 }
 
+
+/*
 .what .image img {
     animation: floatUp10 6s ease-in-out infinite;
 }
 
+*/
 
-/*--card animation --*/
+
+/*--card animation 
 
 .review .card.leftt {
     animation: floatLeft10 6s ease-in-out infinite, shadow-light 6s ease-in-out infinite;
@@ -701,8 +734,10 @@ img {
     animation: floatDown10 6s ease-in-out infinite, shadow-light 6s ease-in-out infinite;
 }
 
+--*/
 
-/*--social circle --*/
+
+/*--social circle 
 
 .connected .social .item {
     animation: shadow-social 6s ease-in-out infinite;
@@ -715,3 +750,4 @@ img {
 .connected .social img.doge {
     animation: zoom-1-2 6s ease-in-out infinite !important;
 }
+--*/
