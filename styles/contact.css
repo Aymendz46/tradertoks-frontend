@@ -125,34 +125,33 @@ img {
 
 .contact .container
 {
-    position: relative;
     width: 100%;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.contact .container .img-left
+.contact .container .img-left img
 {
-    position: absolute;
     width: 176.9px;
     height: 214.47px;
-    left: 149px;
-    top: 171.18px;
-
     opacity: 0.08;
     transform: rotate(-14.13deg);
 }
 
-.contact .container .img-right
+.contact .container .img-right img
 {
-    position: fixed;
     width: 93.31px;
     height: 113.13px;
-    left: 1416.03px;
-    top: 184px;
     opacity: 0.08;
     transform: rotate(5.09deg);
+}
+
+.contact .container .img-right
+{
+    position: relative;
+    top: -100px;
 }
 
 .contact form
