@@ -148,10 +148,23 @@ img {
     transform: rotate(5.09deg);
 }
 
+.contact .container .img-left
+{
+    width: 10%;
+}
+
 .contact .container .img-right
 {
+    width: 10%;
     position: relative;
     top: -100px;
+}
+
+.contact .container .mid
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .contact form
@@ -509,6 +522,10 @@ label
     .contact .btn
     {
         width: 100%;
+    }
+
+    .contact .container .mid {
+        width: auto;
     }
 
     /*---What ----*/
