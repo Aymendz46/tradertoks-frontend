@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/loading.css">
@@ -100,41 +100,43 @@
 
         <!------------------------------>
         <!-- WHO IS TRADER TOKS -->
-        <div class="who ">
+        <div class="contact">
             <div class="section-title">
                 <h1>
-                    About Me
+                    Do you have any questions?
                 </h1>
             </div>
             <div class="container">
-                <div class="first">
-                <div class="image-bottom ">
-                    <img src="images/toks/toks2.png" alt="Trader Toks">
-                </div>
-                <div class="image-top">
-                    <img src="images/toks/toks1.png " alt="Trader Toks ">
-                </div>
-            </div>
-            <div class="second">
-                <h2>TRADER TOKS (COREY)</h2>
-                <div class="line "></div>
-                <p>
-                    Corey, also known as Trader Toks is a Youtuber, Investor/Trader, and most 
-                    importantly devilishly handsome. 
-
-                    Corey first discovered trading in
-                    highschool and devoted his life early on to 
-                    studying technical analysis. He quickly learned that the internet is riddled 
-                    with misinformation and decided to share what he has learned over several
-                    years through social media. Thus, Tradertoks was born.
-                </p>
-                <button href="about.html" class="btn">LEARN MORE <i class="fas fa-angle-double-right"></i></button>
-            </div>
-            </div>    
+                <img class="img-left" src="images/logo/Logo.svg">
+                <img class="img-right" src="images/logo/Logo.svg">
+                <form>
+                    <div class="row">
+                        <div class="input-group">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="input-group">    
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" placeholder="Your email" required>
+                        </div>
+                    </div>
+                        <div class="input-group">
+                            <label for="subject">Subject:</label>
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="message">Message:</label>
+                            <textarea name="message" required> Write your message!
+                            </textarea>
+                        </div>
+                        <button type="submit" href="#" class="btn">Send it my way!</button>
+                    </div> 
+                </form>
+            </div>              
         </div>
 
         <!------------------------------>
-        <!-- STAY CONNECTED WITH ME -->
+        <!-- STAY CONNECTED WITH ME
         <div class="connected ">
             <h2>
                 STAY CONNECTED WITH ME & THE TROOPS

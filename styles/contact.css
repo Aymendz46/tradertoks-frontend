@@ -61,7 +61,7 @@ body {
 .section-title h1 {
     display: inline-block;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 34px;
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: #504B4B;
@@ -83,7 +83,7 @@ body {
 
 
 /*--------------------
-        Left dots
+       Left dots
 --------------------*/
 
 .left-dots {
@@ -108,380 +108,124 @@ body {
     background: #504B4B;
 }
 
-
-/*---------------------- 
-        News letter 
-----------------------*/
-
-.newsletter-cont 
-{
-    margin: 3em 0 0 0;
-    background: #504B4B;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-style: normal;
-    font-weight: 500;
-    padding: 2em;
-}
-
-.newsletter .section-title
-{   
-    font-size: 48px;
-    color: #EDEEEE;
-}
-
-.newsletter-cont .sub-title {
-    font-size: 18px;
-    color: #FFFFFF;
-}
-
-.newsletter-mid
-{
-    width: 500px;
-    padding: 1.5em 0;
-}
-
-.newsletter-mid input {
-    margin-right: -3px;
-    margin: 0.4em 0;
-    border-radius: 0;
-    width: 100%;
-    height: 41px;
-    padding: 1em;
-    background: none;
-    color: #fbfbfb;
-    border: 2px solid #fbfbfb;
-    font-weight: 600;
-    font-size: 12px;
-}
-
-.newsletter-mid .email-btn {
-    margin: -75px;
-    border-radius: 0;
-    width: 75px;
-    height: 41px;
-    background: #fbfbfb;
-    border: none;
-    text-align: center;
-    color: #504B4C;
-    font-size: 12px;
-    font-weight: 500;
-}
-
-.newsletter-cont .no-spam {
-    font-size: 12px;
-    color: #b9b7b7;
-}
-
-.newsletter-cont .section-title.light h2
-{
-    padding: 0;
-    border: none;
-    color: #EDEEEE;
-    font-size: 48px;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.section-title h2 span
-{
-    color: #44A26F;
-}
-
-.newsletter-cont .subsection
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.newsletter-cont .section-title.light {
-    
-}
-
-/*--------------------
-        Main
---------------------*/
-
-.main h1 {
-    font-weight: 600;
-    font-size: 46px;
-    letter-spacing: 0.135em;
-    color: #504B4B;
-}
-
-.main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    gap: 10%;
-}
-
-.right {
-    position: relative;
-}
-
-.main .image-bottom {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 80%;
-    z-index: -1;
-}
-
-.main .image-top {
-    padding-top: 30px;
-    /*padding-left: 30%;*/
-    width: 80%;
-}
-
 img {
     display: block;
 }
 
 
 /*--------------------
-        Who
+        contact
 --------------------*/
 
-.who {
-    margin: 0 10%;
-    width: 80%;
-}
-
-.who .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.who .first
+.contact
 {
-    height: 70vh;
-    width: 70%;
-    padding: 0 0.5em 0 0;
-}
-
-.who .first .image-bottom
-{
-    position: absolute;
-    padding-top: 20px;
-    padding-left: 20px;
-}
-
-.who .second
-{
-    padding: 5% 0 10% 10%;
-}
-
-.who .second h2
-{
-    font-weight: 600;
-    font-size: 48px;
-    color: #504B4B;
-}
-
-.who .second .line
-{
-    display: block;
-    width: 40px;
-    height: 2px;
-    margin: 0.5rem;
-    background: #504B4B;
-}
-
-.who p {
-    /*padding: 0.5em 0 1em 0;*/
-    font-weight: 500;
-    font-size: 14px;
-    color: #757272;
-    margin: 1.2em 0;
-}
-
-.who .btn
-{
-    width: 208px;
-    height: 61px;
-    border: 2px solid #504B4B;
-    border-radius: 0;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    text-transform: uppercase;
-    text-align: center;
-    color: #504B4B;
-    background: none;
-}
-
-/*--------------------
-        Latest Videos
---------------------*/
-
-.vids .band {
-    background: #504B4B;
-}
-
-.vids .discover
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.9em 0 0 0;
-}
-
-.vids .discover h1
-{
-    font-family: Bebas Neue;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 64px;
-    line-height: 77px;
-    color: #504B4B;
-}
-
-.vids .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 10%;
-}
-
-.vids .container .second h2
-{
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: -0.06em;
-    text-transform: uppercase;
-
-    color: #504B4B;
-}
-
-.vids .first
-{
-    width: 70%;
-    padding: 0 0.5em 0 0;
-}
-
-.vids .first .image-bottom
-{
-    position: absolute;
-    padding-top: 20px;
-    padding-left: 20px;
-}
-
-.vids .second
-{
-    padding: 5% 0 5% 10%;
-}
-
-.vids .second .line
-{
-    display: block;
-    width: 40px;
-    height: 2px;
-    margin: 0.5rem;
-    background: #504B4B;
-}
-
-.vids p {
-    /*padding: 0.5em 0 1em 0;*/
-    font-weight: 500;
-    font-size: 14px;
-    color: #757272;
-    margin: 1em 0;
-}
-
-.vids .btn
-{
-    width: 208px;
-    height: 61px;
-    border: 2px solid #504B4B;
-    border-radius: 0;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    text-transform: uppercase;
-    text-align: center;
-    color: #504B4B;
-    background: none;
-}
-
-
-/*--------------------
-        What
---------------------*/
-
-.what .content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-
-.what .content img {
     width: 100%;
+    margin: 0 0 3em 0;
 }
 
-.what .content .detail {
-    padding: 3rem 5rem;
-}
-
-.what .content .detail.dark {
-    padding-left: 20%;
-}
-
-.what .content .detail.light {
-    padding-right: 20%;
-}
-
-.what .content .detail h3 {
-    font-weight: bold;
-    font-size: 24px;
-}
-
-.what .content .detail p {
-    font-weight: normal;
-    font-size: 19px;
-}
-
-.what .content .detail .line {
-    display: block;
-    width: 80px;
-    height: 2px;
-    margin: 2rem;
-}
-
-.what .content .detail.dark {
-    background-color: #504B4B;
-    color: #D3D3D3;
-}
-
-.what .content .detail.dark .line {
-    background-color: #fbfbfb;
-}
-
-.what .content .detail.light {
-    background-color: #FBFBFB;
-}
-
-.what .content .detail.light .line {
-    background-color: #504B4B;
-}
-
-.what .image {
+.contact .container
+{
+    position: relative;
+    width: 100%;
     display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
 }
 
-.what .image img {
-    width: 50%;
-    margin: auto;
+.contact .container .img-left
+{
+    position: absolute;
+    width: 176.9px;
+    height: 214.47px;
+    left: 149px;
+    top: 171.18px;
+
+    opacity: 0.08;
+    transform: rotate(-14.13deg);
+}
+
+.contact .container .img-right
+{
+    position: fixed;
+    width: 93.31px;
+    height: 113.13px;
+    left: 1416.03px;
+    top: 184px;
+    opacity: 0.08;
+    transform: rotate(5.09deg);
+}
+
+.contact form
+{
+    width: 90%;
+    max-width: 600px;
+}
+
+.contact form .input-group
+{
+    margin: 1.5em 0;
+}
+
+input, textarea
+{
+    max-width: 600px;
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 3px solid #504B4C;
+    border-radius: 0;
+    color: #504B4C;
+    background: transparent;
+    font-size: 15px;
+}
+
+label
+{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact .btn
+{
+    width: 208px;
+    height: 61px;
+    border: 2px solid #504B4B;
+    border-radius: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #504B4B;
+    background: none;
+}
+
+.contact form .input-group
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form .row
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact form .row .input-group
+{
+    flex-basis: 48%;
+}
+
+.contact form .row .input-group, textarea
+{
+    
+}
+
+.contact form .input-group input, textarea
+{
+    
 }
 
 
@@ -676,14 +420,14 @@ img {
 
 @media only screen and (max-width: 769px) {
     .main,
-    .who,
+    .contact,
     .what,
     .course,
     .connected
-    .who .image-bottom,
-    .who .image-top,
-    .who .second,
-    .who .first
+    .contact .image-bottom,
+    .contact .image-top,
+    .contact .second,
+    .contact .first
      {
         padding: 0;
         margin: 0;
@@ -739,66 +483,31 @@ img {
         font-size: 12px;
     }
 
-    /*----Who ------*/
+    /*----contact ------*/
 
-    .who {
-        margin: 0 10%;
+    .contact {
+        margin: 0 0 3em 0;
     }
 
-    .who .section-title h1 {
+    .contact .section-title h1 {
+        font-size: 28px;
         padding-left: 0;
         padding-right: 0;
         width: 70%;
     }
 
-    .who .container
-    {
-        flex-direction: column;
-    }
-
-    .who .first
-    {
-        width: auto;
-        height: auto;
-    }
-
-    .who p {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        color: #797878;
-        margin: 1.5em 0;
-    }
-
-    .who .second {
-        padding: 1em 5% 3em 5%;
-        text-align: center;
-    }
-
-    .who .second h2
-    {
-        margin: 0.5em 0;
-        font-weight: 600;
-        font-size: 32px;
-        color: #504B4B;
-    }
-
-    .who .second .line
+    .contact .container img
     {
         display: none;
     }
 
-    .who .first .image-bottom
+    .contact .btn
     {
-        display: none;
-    }
-
-    .who .container .first img
-    {
-        width: 100vw;        
+        width: 100%;
     }
 
     /*---What ----*/
+
     .what .content {
         display: grid;
         grid-template-columns: 1fr;
@@ -845,143 +554,8 @@ img {
         border-bottom: 2px solid #FBFBFB;
     }
 
-    /*----course----*/
-    .course
-    {
-        padding-top: 3em;
-    }
-
-    .course .container {
-        display: flex;
-        padding: 2em;
-        justify-content: unset;
-        align-items: center;
-        overflow-y: auto;
-    }
-    .course .card .course p {
-        padding: 0;
-        width: 15rem;
-    }
-    #course-scroll::-webkit-scrollbar {
-        height: 10px;
-        -webkit-appearance: none;
-    }
-    #course-scroll::-webkit-scrollbar-track {
-        background: transparent;
-        border-left: 1px solid rgba(0, 0, 0, 0.068);
-        border-radius: 10px;
-        background-color: #ffffff;
-    }
-    #course-scroll::-webkit-scrollbar-thumb {
-        background: #504B4B;
-        background-color: rgba(0, 0, 0, .5);
-        border-radius: 10px;
-        border: 2px solid #ffffff;
-    }
-    #course-scroll::-webkit-scrollbar-thumb:hover {
-        background: #555;
-    }
-    #course-scroll::-webkit-scrollbar:vertical {
-        width: 12px;
-    }
-    #course-scroll::-webkit-scrollbar:horizontal {
-        height: 12px;
-    }
-    .connected h1 {
-        font-size: 30px;
-        padding: 0 1rem;
-        margin-top: 2rem;
-    }
-    .container h2 {
-        text-align: center;
-        padding: 0 1rem;
-        font-size: 30px;
-    }
-
-    .course .cta-div p
-    {
-        font-size: 20px;
-    }
-
-    .course .cta-btn
-    {
-        width: 80%;
-        height: 64px;
-        font-size: 16px;
-    }
-
-    /*---- Vids ------*/
-
-    .vids .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .vids .section-title h1 {
-        padding-left: 0;
-        padding-right: 0;
-        width: 70%;
-    }
-
-    .vids .container
-    {
-        flex-direction: column;
-    }
-
-    .vids .first
-    {
-        width: 100vw;
-    }
-
-    .vids p {
-        margin: 1.5em 0;
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        color: #797878;
-    }
-
-    .vids .container .first img
-    {
-        width: 100vw;        
-    }
-
-    .vids .second {
-        padding: 2em 1em;
-    }
-
-    .vids .second h2
-    {
-        /*margin: 0.5em 0;*/
-        color: #504B4B;
-    }
-
-    .vids .second .line
-    {
-        display: none;
-    }
-
-    .vids .first .image-bottom
-    {
-        display: none;
-    }
-
-    .vids .discover
-    {
-        padding: 0;
-    }
-
-    .vids .discover h1
-    {
-        font-size: 48px;
-        text-align: center;
-        padding: 0.1em 1em;
-    }
-
     /*-----Connected-------*/
+
     .connected .social {
         padding: 10rem 0;
     }
@@ -991,7 +565,6 @@ img {
         left: -18px;
         right: 18px;
     }
-
     .connected h2
     {
         padding: 1.5em;
