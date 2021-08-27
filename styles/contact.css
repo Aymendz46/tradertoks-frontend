@@ -495,9 +495,15 @@ label
         width: 70%;
     }
 
-    .contact .container img
+    .contact .container .img-right, .img-left
     {
         display: none;
+    }
+
+    .contact form
+    {
+        margin: 2em;
+        width: auto;
     }
 
     .contact .btn
