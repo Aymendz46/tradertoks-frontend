@@ -98,9 +98,9 @@ nav.active {
 }
 
 nav.inactive {
-    transform: translate(0px, -400px);
+    transform: translate(0px, -200px);
     transition: 1s;
-    display: none;
+    
 }
 
 @keyframes navanimate {
